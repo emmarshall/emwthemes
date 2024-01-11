@@ -1,0 +1,17 @@
+Package: emwthemes
+Type: Package
+Title: Emma Marshall's Personal R Package
+Version: 0.1.0
+Author: Emma Marshall
+Maintainer: Emma Marshall <emma.marshall47@gmail.com>
+Description: Emma Marshall's Personal R Package
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+License: FALSE
+RoxygenNote: 7.2.3
+Depends: 
+    ggplot2
+Imports: 
+    sysfonts,
+    scales
