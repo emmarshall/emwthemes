@@ -1,32 +1,148 @@
-#' @title Import specific fonts
-#' @description Import and register specific Google fonts using sysfonts package.
-#' @return None
+
+#' @title Import "Architects Daughter" font
+#' @details import_*() functions taken from hrbrthemes and Jon Bernhardt..
+#' Created by
+#' You may still need to install each font on your system directly by finding the .ttf file and clicking "Install".
+#' @seealso
+#'  \code{\link[extrafont]{font_import}}
+#' @rdname import_font
 #' @export
-add_fonts <- function() {
-  font_add_google("Architects Daughter", "daughter")
-  font_add_google("Shadows Into Light Two", "shadows")
-  font_add_google("Archivo Black", "archivo")
-  font_add_google("Kalam", "kalam")
-  font_add_google("Oswald", "oswald")
-  systfonts::showtext_auto()
+#' @importFrom extrafont font_import
+
+import_daughter_font <- function() {
+
+  daughter_font_dir <- system.file("fonts", "Architects_Daughter", package = "emwthemes")
+
+  suppressWarnings(suppressMessages(extrafont::font_import(paths = daughter_font_dir, prompt = FALSE)))
+
+  message(
+    sprintf(
+      "You should install these fonts on your system directly. The files are located in [%s]",
+      daughter_font_dir
+    )
+  )
 }
 
-# Example usage:
-# import_specific_google_fonts()
 
-#' Function to check font availability
-#'
-#' @param font_name Name of the font to check
-#'
-#' @return A warning message if the font is not found.
-#'
+#' @title Import "Shadows Into Light Two" font
+#' @details import_*() functions taken from hrbrthemes.
+#' You may still need to install each font on your system directly by finding the .ttf file and clicking "Install".
+#' @seealso
+#'  \code{\link[extrafont]{font_import}}
+#' @rdname import_font
 #' @export
-check_font <- function(font_name) {
-  if (!requireNamespace("sysfonts", quietly = TRUE)) {
-    warning("The 'sysfonts' package is required to check font availability.")
-  } else {
-    if (!font_name %in% sysfonts::font_names()) {
-      warning("Font '", font_name, "' is not available.")
-    }
-  }
+#' @importFrom extrafont font_import
+
+import_shadows_font <- function() {
+
+  shadows_font_dir <- system.file("fonts", "Shadows_Into_Light_Two", package = "emwthemes")
+
+  suppressWarnings(suppressMessages(extrafont::font_import(paths = shadows_font_dir, prompt = FALSE)))
+
+  message(
+    sprintf(
+      "You should install these fonts on your system directly. The files are located in [%s]",
+      shadows_font_dir
+    )
+  )
 }
+
+
+
+#' @title Import "Monolisaemw" font
+#' @details import_*() functions taken from hrbrthemes and tvthemes
+#' You may still need to install each font on your system directly by finding the .ttf file and clicking "Install".
+#' @seealso
+#'  \code{\link[extrafont]{font_import}}
+#' @rdname import_font
+#' @export
+#' @importFrom extrafont font_import
+
+import_monolisa_font <- function() {
+
+  monolisa_font_dir <- system.file("fonts", "MonoLisa_emw", package = "emwthemes")
+
+  suppressWarnings(suppressMessages(extrafont::font_import(paths = monolisa_font_dir, prompt = FALSE)))
+
+  message(
+    sprintf(
+      "You should install these fonts on your system directly. The files are located in [%s]",
+      monolisa_font_dir
+    )
+  )
+}
+
+
+#' @title Import "DM Serif" font
+#' @details import_*() functions taken from hrbrthemes.
+#' You may still need to install each font on your system directly by finding the .ttf file and clicking "Install".
+#' @seealso
+#'  \code{\link[extrafont]{font_import}}
+#' @rdname import_font
+#' @export
+#' @importFrom extrafont font_import
+
+import_dmserif_font <- function() {
+
+  dmserif_font_dir <- system.file("fonts", "DM_Serif_Display", package = "emwthemes")
+
+  suppressWarnings(suppressMessages(extrafont::font_import(paths = dmserif_font_dir, prompt = FALSE)))
+
+  message(
+    sprintf(
+      "You should install these fonts on your system directly. The files are located in [%s]",
+      dmserif_font_dir
+    )
+  )
+}
+
+
+
+#' @title Import "DM Sans" font
+#' @details import_*() functions taken from hrbrthemes.
+#' You may still need to install each font on your system directly by finding the .ttf file and clicking "Install".
+#' @seealso
+#'  \code{\link[extrafont]{font_import}}
+#' @rdname import_font
+#' @export
+#' @importFrom extrafont font_import
+
+import_dmsans_font <- function() {
+
+  dmsans_font_dir <- system.file("fonts", "DM_Sans", package = "emwthemes")
+
+  suppressWarnings(suppressMessages(extrafont::font_import(paths = dmsans_font_dir, prompt = FALSE)))
+
+  message(
+    sprintf(
+      "You should install these fonts on your system directly. The files are located in [%s]",
+      dmsans_font_dir
+    )
+  )
+}
+
+
+#' @title Import "Metropolis" font
+#' @details import_*() functions taken from hrbrthemes.
+#' You may still need to install each font on your system directly by finding the .ttf file and clicking "Install".
+#' @seealso
+#'  \code{\link[extrafont]{font_import}}
+#' @rdname import_font
+#' @export
+#' @importFrom extrafont font_import
+
+import_metropolis_font <- function() {
+
+  metropolis_font_dir <- system.file("fonts", "Metropolis", package = "emwthemes")
+
+  suppressWarnings(suppressMessages(extrafont::font_import(paths = metropolis_font_dir, prompt = FALSE)))
+
+  message(
+    sprintf(
+      "You should install these fonts on your system directly. The files are located in [%s]",
+      metropolis_font_dir
+    )
+  )
+}
+
+

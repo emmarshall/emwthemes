@@ -4,14 +4,27 @@ Title: Emma Marshall's Personal R Package
 Version: 0.1.0
 Author: Emma Marshall
 Maintainer: Emma Marshall <emma.marshall47@gmail.com>
-Description: Emma Marshall's Personal R Package
+Description: Contains various 'ggplot2' themes and color palettes for 
+  personal use.
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-License: FALSE
+License: CC0
 RoxygenNote: 7.2.3
-Depends: 
-    ggplot2
-Imports: 
-    sysfonts,
-    scales
+Imports:
+    ggplot2,
+    ggtext,
+    scales,
+    glue,
+    extrafont
+Suggests: 
+    knitr,
+    rmarkdown,
+    spelling,
+    testthat (>= 3.0.0),
+    dplyr,
+    tidyr,
+    stringr,
+    survivoR
+Language: en-US
+VignetteBuilder: knitr
