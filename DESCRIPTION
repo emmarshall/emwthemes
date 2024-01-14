@@ -16,7 +16,8 @@ Imports:
     ggtext,
     scales,
     glue,
-    extrafont
+    extrafont,
+    ggrepel
 Suggests: 
     knitr,
     rmarkdown,

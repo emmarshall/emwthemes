@@ -12,7 +12,7 @@ Emma Marshall
 
 <!-- badges: end -->
 
-The goal of emwthemes is to …
+This is a package for personal use.
 
 ## Installation
 
@@ -207,8 +207,7 @@ Using `theme_em` to print a scatter plot with width = 12 inches & height
 elements, in this case the subtitle:
 
 ``` r
-
-season_summary |> 
+line_md <- season_summary |> 
   filter(version == "US") |> 
   select(season, viewers_premiere, viewers_finale)  |> 
   pivot_longer(cols = -season, names_to = "episode", values_to = "viewers") |> 
@@ -223,7 +222,11 @@ season_summary |>
     x = "Season",
     y = "Viewers (Millions)",
     color = "Episode"
-  ) +
+  ) 
+```
+
+``` r
+line_md +
   theme_em(md = TRUE) 
 ```
 
@@ -231,4 +234,20 @@ season_summary |>
 <img src="man/figures/README-line-main-1.png"
 alt="Example plot with theme_em()" />
 <figcaption aria-hidden="true">Example plot with theme_em()</figcaption>
+</figure>
+
+``` r
+line_md +
+  theme_em_dark(md = TRUE,
+                with.line = TRUE) 
+#> Warning: Removed 6 rows containing missing values (`geom_line()`).
+```
+
+<img src="man/figures/README-line-dark-1.png" width="100%" style="display: block; margin: auto;" />
+
+<figure>
+<img src="man/figures/README-line-dark-1.png"
+alt="Example plot with theme_em_dark()" />
+<figcaption aria-hidden="true">Example plot with
+theme_em_dark()</figcaption>
 </figure>

@@ -25,7 +25,7 @@
 #'
 #' @export
 theme_emw_dark <- function(
-    base_family = "Metropolis",
+    base_family = "Architects Daughter",
     base_size = 10.5,
     with.panel.grid = FALSE,
     with.axis.line = FALSE,

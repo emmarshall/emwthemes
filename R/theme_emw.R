@@ -100,75 +100,73 @@ theme_emw <- function(
 }
 
 
-#' Change geom defaults from black to custom lights for the Dark theme
+#' Update matching font defaults for text geoms
+#'
+#' Updates [ggplot2::geom_label] and [ggplot2::geom_text] font defaults
+#' @importFrom ggrepel GeomTextRepel GeomLabelRepel
+#'
+#' @param family Font family, default "Architects Daughter".
+#' @param face Font face, default "plain".
+#' @param size font size in mm.
+#' @param color Font color, default "#ff6361".
 #'
 #' @export
-emw_geom_defaults <- function() {
 
-  geoms <- c("abline", "area", "bar", "boxplot", "col", "crossbar",
-             "density", "dotplot", "errorbar", "errorbar",
-             "hline", "line", "linerange",
-             "map", "path", "point", "polygon", "rect", "ribbon", "rug", "segment",
-             "step", "tile", "violin", "vline")
-
-  for (g in geoms) {
-    ggplot2::update_geom_defaults(g, list(colour = "#FF6361", fill = "#ff8281"))
-  }
-
-  geoms <- c("text", "label")
-
-  for (g in geoms) {
-    ggplot2::update_geom_defaults(g, list(colour = "#424651", fill = "#6a6d76"))
-  }
-
-}
-
-#' Custom theme palette
-#'
-#' @return A vector of personal theme colors
-#'
-#' @export
-emw_pal <- c(
-  "#ff8281", #light-coral
-  "#235789", #lapis-lazuli
-  "#F4EEA9", #icterine
-  "#FCBF49", #xanthous
-  "#03CEA4", #mint
-  "#3C887E", #dark-cyan
-  "#1985A1", #blue
-  "#4C5C68", #paynes-gray
-  "#303036" #jet
-)
-
-#' Custom theme palette function
-#'
-#' @param num_cols Number of colors to return.
-#' @param var_type Type of palette (discrete or continuous).
-#'
-#' @return A function that generates the EMW palette.
-#'
-#' @export
-emw_palette <- function(num_cols, var_type = c("discrete", "continuous")) {
-  type <- match.arg(var_type)
-
-  if (missing(num_cols)) {
-    num_cols <- length(emw_pal)
-  }
-
-  emw <- switch(
-    type,
-    # Recycles palette colors to desired discrete length
-    "discrete"   = rep(emw_pal, length.out = num_cols),
-    # Interpolates colors
-    "continuous" = grDevices::colorRampPalette(emw_pal)(num_cols)
+update_geom_fonts_emw <- function(
+    family = "Architects Daughter",
+    face = "plain",
+    size = 7,
+    color = "#ff6361") {
+  ggplot2::update_geom_defaults(
+    "text",
+    list(family = family, face = face, size = size, color = color)
   )
-
-  structure(
-    emw,
-    name  = "emw",
-    class = "palette"
+  ggplot2::update_geom_defaults(
+    "label",
+    list(family = family, face = face, size = size, color = color, fill = color)
+  )
+  ggplot2::update_geom_defaults(
+    "text_repel",
+    list(family = family, face = face, size = size, color = color)
+  )
+  ggplot2::update_geom_defaults(
+    "label_repel",
+    list(family = family, face = face, size = size, color = color)
   )
 }
 
+
+emw_palette <- c("#ff6361", "#FFD166", "#2AFC98", "#19647E", "#FFFD82", "#34435E", "#73EEDC", "#2E6171", "#32373B")
+
+
+#' A personal color palette to use with ggplot
+#'
+#' @export
+#' @examples
+#' library(scales)
+#' scales::show_col(emw_pal()(9))
+emw_pal <- function() {
+  emw_palette <- c("#ff6361", "#FFD166", "#2AFC98", "#19647E", "#FFFD82", "#34435E", "#73EEDC", "#2E6171", "#32373B")
+
+  scales::manual_pal(emw_palette)
+}
+
+#' Discrete color & fill scales based on the emw palette
+#'
+#' See [emw_pal()].
+#'
+#' @md
+#' @inheritDotParams ggplot2::discrete_scale -expand -position
+#' @rdname scale_emw
+#' @export
+scale_colour_emw <- function(...) { ggplot2::discrete_scale("colour", "emw", emw_pal(), ...) }
+
+#' @export
+#' @rdname scale_emw
+scale_color_emw <- scale_colour_emw
+
+#' @export
+#' @rdname scale_emw
+scale_fill_emw <- function(...) { ggplot2::discrete_scale("fill", "emw", emw_pal(), ...) }
 
 

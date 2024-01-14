@@ -5,7 +5,7 @@
 \title{Custom dark ggplot2 theme for Personal use}
 \usage{
 theme_emw_dark(
-  base_family = "Metropolis",
+  base_family = "Architects Daughter",
   base_size = 10.5,
   with.panel.grid = FALSE,
   with.axis.line = FALSE,
