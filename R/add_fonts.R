@@ -146,3 +146,26 @@ import_metropolis_font <- function() {
 }
 
 
+#' @title Import "Oswald" font
+#' @details import_*() functions taken from hrbrthemes.
+#' You may still need to install each font on your system directly by finding the .ttf file and clicking "Install".
+#' @seealso
+#'  \code{\link[extrafont]{font_import}}
+#' @rdname import_font
+#' @export
+#' @importFrom extrafont font_import
+
+import_oswald_font <- function() {
+
+  oswald_font_dir <- system.file("fonts", "Oswald", package = "emwthemes")
+
+  suppressWarnings(suppressMessages(extrafont::font_import(paths = oswald_font_dir, prompt = FALSE)))
+
+  message(
+    sprintf(
+      "You should install these fonts on your system directly. The files are located in [%s]",
+      oswald_font_dir
+    )
+  )
+}
+

@@ -7,6 +7,7 @@
 \alias{import_dmserif_font}
 \alias{import_dmsans_font}
 \alias{import_metropolis_font}
+\alias{import_oswald_font}
 \title{Import "Architects Daughter" font}
 \usage{
 import_daughter_font()
@@ -20,6 +21,8 @@ import_dmserif_font()
 import_dmsans_font()
 
 import_metropolis_font()
+
+import_oswald_font()
 }
 \description{
 Import "Architects Daughter" font
@@ -33,6 +36,8 @@ Import "DM Serif" font
 Import "DM Sans" font
 
 Import "Metropolis" font
+
+Import "Oswald" font
 }
 \details{
 import_*() functions taken from hrbrthemes and Jon Bernhardt..
@@ -53,8 +58,13 @@ You may still need to install each font on your system directly by finding the .
 
 import_*() functions taken from hrbrthemes.
 You may still need to install each font on your system directly by finding the .ttf file and clicking "Install".
+
+import_*() functions taken from hrbrthemes.
+You may still need to install each font on your system directly by finding the .ttf file and clicking "Install".
 }
 \seealso{
+\code{\link[extrafont]{font_import}}
+
 \code{\link[extrafont]{font_import}}
 
 \code{\link[extrafont]{font_import}}

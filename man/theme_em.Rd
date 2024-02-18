@@ -5,13 +5,14 @@
 \title{A \link{ggplot2} theme for personal use}
 \usage{
 theme_em(
-  title_family = "MonoLisa emw",
-  text_family = "MonoLisa emw",
-  base_size = 10.5,
+  title_family = "Oswald",
+  text_family = "Oswald",
+  base_size = 11,
   text_color = "#2F2D2E",
   bg_color = "#fefefe",
   line_color = "gray50",
-  plot_margin = ggplot2::margin(20, 20, 20, 20),
+  plot_margin = ggplot2::margin(0.5, 1, 0.5, 1, unit = "cm"),
+  text_margin = ggplot2::margin(0.2, 0, 1, 0, unit = "cm"),
   md = FALSE
 )
 }
@@ -29,6 +30,8 @@ theme_em(
 \item{line_color}{color of line elements}
 
 \item{plot_margin}{plot margin specifications}
+
+\item{text_margin}{margin around text}
 
 \item{md}{indicate whether to use markdown elements for text}
 }

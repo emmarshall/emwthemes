@@ -174,7 +174,8 @@ bar <- jury_votes |>
         title = "David vs Goliath: Season 37 Final Tribal",
         subtitle = "Votes received by each finalist"
       ) +
-  theme_emw(with.axis.line = TRUE) 
+  theme_emw(with.axis.line = TRUE) +
+  scale_x_discrete(guide = guide_axis(n.dodge = 3))
 ```
 
 <figure>
@@ -197,7 +198,7 @@ alt="Example plot with theme_emw_dark()" />
 theme_emw_dark()</figcaption>
 </figure>
 
-### Using `theme_em()` with `MonaLisa` font and `md=TRUE`
+### Using `theme_em()` with `Oswald` font and `md=TRUE`
 
 ### Alternate, more professional option with built in ability to use `ggtext::markdown_elements`
 
@@ -228,7 +229,10 @@ line_md <- season_summary |>
 ``` r
 line_md +
   theme_em(md = TRUE) 
+#> Warning: Removed 6 rows containing missing values (`geom_line()`).
 ```
+
+<img src="man/figures/README-line-main-1.png" width="100%" style="display: block; margin: auto;" />
 
 <figure>
 <img src="man/figures/README-line-main-1.png"
