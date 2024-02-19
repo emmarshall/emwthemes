@@ -17,7 +17,8 @@ Imports:
     scales,
     glue,
     extrafont,
-    ggrepel
+    ggrepel,
+    magick
 Suggests: 
     knitr,
     rmarkdown,
