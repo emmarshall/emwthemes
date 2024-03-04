@@ -4,7 +4,7 @@
 \alias{scale_colour_unl}
 \alias{scale_color_unl}
 \alias{scale_fill_unl}
-\title{Discrete color & fill scales based on the br palette}
+\title{Discrete color & fill scales based on the UNL palette}
 \usage{
 scale_colour_unl(...)
 

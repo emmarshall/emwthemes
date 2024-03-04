@@ -134,7 +134,7 @@ unl_pal <- function() {
   scales::manual_pal(unl_palette)
 }
 
-#' Discrete color & fill scales based on the br palette
+#' Discrete color & fill scales based on the UNL palette
 #'
 #' See [unl_pal()].
 #'
@@ -151,3 +151,38 @@ scale_color_unl <- scale_colour_unl
 #' @export
 #' @rdname scale_unl
 scale_fill_unl <- function(...) { ggplot2::discrete_scale("fill", "unl", unl_pal(), ...) }
+
+
+
+
+#' Function to extract unl brand colors as hex codes
+#'
+#' @param ... Character names of unl_colors
+#'
+#'
+#'
+# unl brand-guide colors
+unl_cols <- c(
+  `unl red`        = "#d00000",
+  `unl light red` = "#F5cccc",
+  `unl cream`      = "#f5f1e7",
+  `light cream`  = "#fefdfa",
+  `gray`       = "#c7c8ca",
+  `dark gray` = "#404040",
+  `yellow`     = "#ffc425",
+  `navy` = "#001226",
+  `blue`  = "#005d84",
+  `light blue` = "#249ab5",
+  `orange` =  "#f58a1f",
+  `green` = "#bccb2a",
+  `purple` = "#a5228d"
+)
+
+unl_cols <- function(...) {
+  cols <- c(...)
+
+  if (is.null(cols))
+    return (unl_colors)
+
+  unl_colors[cols]
+}

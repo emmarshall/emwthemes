@@ -9,9 +9,10 @@ theme_unl_dark(
   text_family = "Oswald",
   base_size = 10.5,
   title_color = "#D00000",
+  subtitle_color = "#ffd74f",
   text_color = "#ebebea",
   bg_color = "#242423",
-  line_color = "#f5f1e7",
+  line_color = "#c7c8ca",
   plot_margin = ggplot2::margin(20, 20, 20, 20),
   with.grid = FALSE,
   with.line = FALSE,
@@ -26,6 +27,8 @@ theme_unl_dark(
 \item{base_size}{base font size}
 
 \item{title_color}{color of the title elements}
+
+\item{subtitle_color}{color of subtitle elements}
 
 \item{text_color}{color of the text elements}
 
@@ -42,7 +45,7 @@ theme_unl_dark(
 \item{md}{indicate whether to use markdown elements for text}
 }
 \description{
-There is an option adapted from \code{theme_ib} to convert
+There is an option to convert
 theme use markdown theme elements (\code{md = TRUE}) to use markdown
 theme elements from \code{ggtext} instead of \code{element_text()}.
 }
