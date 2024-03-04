@@ -107,7 +107,7 @@ line <- season_summary |>
     x = "Season",
     y = "Viewers (Millions)",
     colour = "Episode"
-  ) 
+  )
 ```
 
 ![Example plot with `theme_emw()`](man/figures/README-survivor-viewers-1.png)
@@ -123,6 +123,14 @@ line +
 
 ![Example plot with theme_emw_dark()](man/figures/README-survivor-viewers-dark-1.png)
 
+```{r unl-dark, messages=FALSE, warning=FALSE, eval=FALSE}
+
+line +
+
+  theme_unl_dark()
+```
+
+![](man/figures/README-unl-dark-1.png)
 
 ## Bar Charts
 

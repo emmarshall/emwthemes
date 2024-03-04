@@ -116,7 +116,7 @@ line <- season_summary |>
     x = "Season",
     y = "Viewers (Millions)",
     colour = "Episode"
-  ) 
+  )
 ```
 
 <figure>
@@ -140,6 +140,15 @@ alt="Example plot with theme_emw_dark()" />
 <figcaption aria-hidden="true">Example plot with
 theme_emw_dark()</figcaption>
 </figure>
+
+``` r
+
+line +
+
+  theme_unl_dark()
+```
+
+![](man/figures/README-unl-dark-1.png)
 
 ## Bar Charts
 
