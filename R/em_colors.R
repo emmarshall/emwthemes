@@ -101,3 +101,53 @@ scale_color_br <- scale_colour_br
 #' @export
 #' @rdname scale_br
 scale_fill_br <- function(...) { ggplot2::discrete_scale("fill", "br", br_pal(), ...) }
+
+
+
+unl_pal <- c(
+  "#d00000", #red
+  "#FFD74F", #yellow
+  "#f5f1e7", #cream
+  "#c7c8ca", #gray
+  "#249AB5", #cyan
+  "#005D84", #blue
+  "#F58A1F", #orange
+  "#F5CCCC" #rose
+)
+
+#' A personal color palette to use with ggplot
+#'
+#' @export
+#' @examples
+#' library(scales)
+#' scales::show_col(unl_pal()(7))
+unl_pal <- function() {
+  unl_palette <- c(
+    "#d00000", #red
+    "#FFD74F", #yellow
+    "#249AB5", #cyan
+    "#005D84", #blue
+    "#f5f1e7", #cream
+    "#c7c8ca", #gray
+    "#F5CCCC" #rose
+  )
+  scales::manual_pal(unl_palette)
+}
+
+#' Discrete color & fill scales based on the br palette
+#'
+#' See [unl_pal()].
+#'
+#' @md
+#' @inheritDotParams ggplot2::discrete_scale -expand -position
+#' @rdname scale_unl
+#' @export
+scale_colour_unl <- function(...) { ggplot2::discrete_scale("colour", "unl", unl_pal(), ...) }
+
+#' @export
+#' @rdname scale_unl
+scale_color_unl <- scale_colour_unl
+
+#' @export
+#' @rdname scale_unl
+scale_fill_unl <- function(...) { ggplot2::discrete_scale("fill", "unl", unl_pal(), ...) }

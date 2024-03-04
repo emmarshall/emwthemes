@@ -49,6 +49,7 @@ Themes use two different color palette:
 ``` r
 scales::show_col(emwthemes:::emw_pal)
 scales::show_col(emwthemes:::dark_pal)
+scaled::show_col(emwthemes:::unl_pal)
 ```
 
 ### Bright Color Palette (default for `theme_emw()`)
@@ -115,8 +116,7 @@ line <- season_summary |>
     x = "Season",
     y = "Viewers (Millions)",
     colour = "Episode"
-  ) +
-  theme_emw() 
+  ) 
 ```
 
 <figure>
@@ -229,7 +229,8 @@ line_md <- season_summary |>
 ``` r
 line_md +
   theme_em(md = TRUE) 
-#> Warning: Removed 6 rows containing missing values (`geom_line()`).
+#> Warning: Removed 6 rows containing missing values or values outside the scale range
+#> (`geom_line()`).
 ```
 
 <img src="man/figures/README-line-main-1.png" width="100%" style="display: block; margin: auto;" />
@@ -244,7 +245,8 @@ alt="Example plot with theme_em()" />
 line_md +
   theme_em_dark(md = TRUE,
                 with.line = TRUE) 
-#> Warning: Removed 6 rows containing missing values (`geom_line()`).
+#> Warning: Removed 6 rows containing missing values or values outside the scale range
+#> (`geom_line()`).
 ```
 
 <img src="man/figures/README-line-dark-1.png" width="100%" style="display: block; margin: auto;" />

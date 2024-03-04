@@ -57,6 +57,7 @@ Themes use two different color palette:
 ```{r colors, eval=FALSE}
 scales::show_col(emwthemes:::emw_pal)
 scales::show_col(emwthemes:::dark_pal)
+scaled::show_col(emwthemes:::unl_pal)
 ```
 
 ### Bright Color Palette (default for `theme_emw()`)
@@ -106,8 +107,7 @@ line <- season_summary |>
     x = "Season",
     y = "Viewers (Millions)",
     colour = "Episode"
-  ) +
-  theme_emw() 
+  ) 
 ```
 
 ![Example plot with `theme_emw()`](man/figures/README-survivor-viewers-1.png)
@@ -122,6 +122,7 @@ line +
 ```
 
 ![Example plot with theme_emw_dark()](man/figures/README-survivor-viewers-dark-1.png)
+
 
 ## Bar Charts
 
