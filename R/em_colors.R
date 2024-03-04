@@ -152,37 +152,43 @@ scale_color_unl <- scale_colour_unl
 #' @rdname scale_unl
 scale_fill_unl <- function(...) { ggplot2::discrete_scale("fill", "unl", unl_pal(), ...) }
 
-
-
+# Definition of colors outside the function
+unl_colors <- c(
+  `unl red`        = "#d00000",
+  `unl light red`  = "#F5cccc",
+  `unl cream`      = "#f5f1e7",
+  `light cream`    = "#fefdfa",
+  `gray`           = "#c7c8ca",
+  `dark gray`      = "#404040",
+  `yellow`         = "#ffc425",
+  `navy`           = "#001226",
+  `blue`           = "#005d84",
+  `light blue`     = "#249ab5",
+  `orange`         = "#f58a1f",
+  `green`          = "#bccb2a",
+  `purple`         = "#a5228d"
+)
 
 #' Function to extract unl brand colors as hex codes
 #'
 #' @param ... Character names of unl_colors
 #'
+#' Example: unl_get_colors("blue", "green")
+#' @export
 #'
-#'
-# unl brand-guide colors
-unl_cols <- c(
-  `unl red`        = "#d00000",
-  `unl light red` = "#F5cccc",
-  `unl cream`      = "#f5f1e7",
-  `light cream`  = "#fefdfa",
-  `gray`       = "#c7c8ca",
-  `dark gray` = "#404040",
-  `yellow`     = "#ffc425",
-  `navy` = "#001226",
-  `blue`  = "#005d84",
-  `light blue` = "#249ab5",
-  `orange` =  "#f58a1f",
-  `green` = "#bccb2a",
-  `purple` = "#a5228d"
-)
-
-unl_cols <- function(...) {
+#' @return A vector of color hex codes
+#' @description This function extracts University of Nebraska–Lincoln's brand colors in hex codes.
+unl_get_colors <- function(...) {
   cols <- c(...)
 
-  if (is.null(cols))
-    return (unl_colors)
-
-  unl_colors[cols]
+  # Check whether colors were specified, if not return all colors
+  if (length(cols) == 0) {
+    return(unl_colors)
+  } else {
+    # Return only the specified colors
+    return(unl_colors[cols])
+  }
 }
+
+
+

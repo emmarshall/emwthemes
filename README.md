@@ -30,15 +30,9 @@ devtools::install_github("emmarshall/emwthemes")
 playful font [Architects
 Daughter](https://fonts.google.com/specimen/Architects+Daughter)
 
-**`scale_x_comma`:** formatted X-axis scale for **comma** label formats
+**`add_logo`:** easily add logo to plot object
 
-**`scale_x_percent`:** formatted X-axis scale for **percent** label
-formats
-
-**`scale_y_comma`:** formatted Y-axis scale for **comma** label formats
-
-**`scale_y_percent`:** formatted Y-axis scale for **percent** label
-formats
+**`link_to_img`:** processes image from url for use with `ggimage()`
 
 ## Fonts & Colors
 
@@ -52,7 +46,7 @@ scales::show_col(emwthemes:::dark_pal)
 scaled::show_col(emwthemes:::unl_pal)
 ```
 
-### Bright Color Palette (default for `theme_emw()`)
+### Personal Color Palette (default for `theme_emw()`)
 
 <figure>
 <img src="man/figures/README-colors-1.png"
@@ -62,8 +56,12 @@ alt="Personal Scale colors" />
 
 ### Bright Color Palette (default for `theme_emw_dark()`)
 
-![Bright Scale colors](man/figures/README-colors-2.png) \### Discrete
-and Continuous Scale
+<figure>
+<img src="man/figures/README-colors-2.png" alt="Bright Scale colors" />
+<figcaption aria-hidden="true">Bright Scale colors</figcaption>
+</figure>
+
+### Discrete and Continuous Scale
 
 **`scale_color_em`:** Discrete color & fill scales based on a bright
 palette
@@ -147,6 +145,8 @@ line +
 
   theme_unl_dark()
 ```
+
+<img src="man/figures/README-unl-dark-again-1.png" width="100%" style="display: block; margin: auto;" />
 
 ![](man/figures/README-unl-dark-1.png)
 

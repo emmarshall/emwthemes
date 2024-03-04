@@ -43,7 +43,7 @@ theme_unl_dark <- function(title_family = "Oswald",
 
         plot.title = ggplot2::element_text(face = "bold",
                                            color = title_color,
-                                           size = base_size * 2.2,
+                                           size = base_size * 2.5,
                                            lineheight = 1.2),
         plot.title.position = "plot",
         plot.subtitle = ggplot2::element_text(size = base_size * 1.7,
@@ -57,9 +57,9 @@ theme_unl_dark <- function(title_family = "Oswald",
           linetype = 1
         ),
         axis.text = ggplot2::element_text(size = base_size * 1.2,
-                                          color = text_color),
+                                          color = line_color),
         axis.title = ggplot2::element_text(size = base_size * 1.6,
-                                           hjust = 0.85),
+                                           hjust = 0.9),
         axis.line = ggplot2::element_line(
           color = if (with.line) line_color else "transparent",
           linewidth = 1.5
@@ -67,7 +67,8 @@ theme_unl_dark <- function(title_family = "Oswald",
         legend.title = ggplot2::element_text(size = base_size * 1.1,
                                              face = "bold",
                                              color = bg_color),
-        legend.text = ggplot2::element_text(size = base_size * 0.9,),
+        legend.text = ggplot2::element_text(size = base_size * 0.9,
+                                            color = bg_color),
         legend.background = ggplot2::element_rect(fill = subtitle_color,
                                                   color = bg_color,
                                                   linewidth = 1)
@@ -99,18 +100,19 @@ theme_unl_dark <- function(title_family = "Oswald",
         ),
 
         axis.text = ggplot2::element_text(size = base_size * 1.2,
-                                          color = text_color),
+                                          color = line_color),
         axis.title = ggtext::element_markdown(size = base_size * 1.5,
                                               color = subtitle_color,
-                                              hjust = .85),
+                                              hjust = .9),
         axis.line = ggplot2::element_line(
           color = if (with.line) line_color else "transparent",
-          linetype = 1.5
+          linewidth = 1.5
         ),
         legend.title = ggplot2::element_text(size = base_size * 1.1,
                                              face = "bold",
                                              color = bg_color),
-        legend.text = ggplot2::element_text(size = base_size * 0.9,),
+        legend.text = ggplot2::element_text(size = base_size * 0.9,
+                                            color = bg_color),
         legend.background = ggplot2::element_rect(fill = subtitle_color,
                                                   color = bg_color,
                                                   linewidth = 1)
@@ -138,10 +140,10 @@ theme_unl_dark <- function(title_family = "Oswald",
         ),
 
         legend.position = "none",
-        axis.title = ggplot2::element_text(hjust = 1),
+        axis.title = ggplot2::element_text(hjust = .9),
         axis.line = ggplot2::element_line(
           color = if (with.line) line_color else "transparent",
-          linetype = 1.5
+          linewidth = 1.5
         ),
       )
   }

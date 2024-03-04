@@ -40,13 +40,9 @@ devtools::install_github("emmarshall/emwthemes")
 
 **`update_geom_fonts_em`:** Update font defaults for text geoms to use playful font [Architects Daughter](https://fonts.google.com/specimen/Architects+Daughter)
 
-**`scale_x_comma`:** formatted X-axis scale for **comma** label formats
+**`add_logo`:** easily add logo to plot object
 
-**`scale_x_percent`:** formatted X-axis scale for **percent** label formats
-
-**`scale_y_comma`:** formatted Y-axis scale for **comma** label formats
-
-**`scale_y_percent`:** formatted Y-axis scale for **percent** label formats
+**`link_to_img`:** processes image from url for use with `ggimage()`
 
 ## Fonts & Colors
 
@@ -60,11 +56,13 @@ scales::show_col(emwthemes:::dark_pal)
 scaled::show_col(emwthemes:::unl_pal)
 ```
 
-### Bright Color Palette (default for `theme_emw()`)
+### Personal Color Palette (default for `theme_emw()`)
 ![Personal Scale colors](man/figures/README-colors-1.png)
 
 ### Bright Color Palette (default for `theme_emw_dark()`)
 ![Bright Scale colors](man/figures/README-colors-2.png)
+
+
 ### Discrete and Continuous Scale
 
 **`scale_color_em`:** Discrete color & fill scales based on a bright palette
@@ -123,7 +121,7 @@ line +
 
 ![Example plot with theme_emw_dark()](man/figures/README-survivor-viewers-dark-1.png)
 
-```{r unl-dark, messages=FALSE, warning=FALSE, eval=FALSE}
+```{r unl-dark-again, messages=FALSE, warning=FALSE, eval=TRUE}
 
 line +
 
