@@ -11,7 +11,7 @@ theme_unl_dark(
   title_color = "#D00000",
   text_color = "#ebebea",
   bg_color = "#242423",
-  line_color = "#c7c8ca",
+  line_color = "#f5f1e7",
   plot_margin = ggplot2::margin(20, 20, 20, 20),
   with.grid = FALSE,
   with.line = FALSE,

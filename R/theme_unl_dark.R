@@ -22,7 +22,7 @@ theme_unl_dark <- function(title_family = "Oswald",
                           text_family = "Oswald",
                           base_size = 10.5, title_color = "#D00000",
                           text_color = "#ebebea",
-                          bg_color = "#242423", line_color = "#c7c8ca",
+                          bg_color = "#242423", line_color = "#f5f1e7",
                           plot_margin = ggplot2::margin(20,20,20,20),
                           with.grid = FALSE, with.line = FALSE,
                           md = FALSE) {
@@ -55,7 +55,7 @@ theme_unl_dark <- function(title_family = "Oswald",
         axis.text = ggplot2::element_text(size = base_size * 1.2,
                                           color = text_color),
         axis.title = ggplot2::element_text(size = base_size * 1.6,
-                                           hjust = 1),
+                                           hjust = 0.85),
         axis.line = ggplot2::element_line(
           color = if (with.line) line_color else "transparent",
           linetype = 1.5
@@ -93,7 +93,7 @@ theme_unl_dark <- function(title_family = "Oswald",
                                           color = text_color),
         axis.title = ggtext::element_markdown(size = base_size * 1.6,
                                               color = text_color,
-                                              hjust = 1),
+                                              hjust = .85),
         axis.line = ggplot2::element_line(
           color = if (with.line) line_color else "transparent",
           linetype = 1.5
