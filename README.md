@@ -146,9 +146,7 @@ line +
   theme_unl_dark()
 ```
 
-<img src="man/figures/README-unl-dark-again-1.png" width="100%" style="display: block; margin: auto;" />
-
-![](man/figures/README-unl-dark-1.png)
+![](man/figures/README-unl-dark-again-1.png)
 
 ## Bar Charts
 

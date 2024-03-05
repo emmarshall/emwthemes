@@ -121,14 +121,14 @@ line +
 
 ![Example plot with theme_emw_dark()](man/figures/README-survivor-viewers-dark-1.png)
 
-```{r unl-dark-again, messages=FALSE, warning=FALSE, eval=TRUE}
+```{r unl-dark-again, messages=FALSE, warning=FALSE, eval=FALSE}
 
 line +
 
   theme_unl_dark()
 ```
 
-![](man/figures/README-unl-dark-1.png)
+![](man/figures/README-unl-dark-again-1.png)
 
 ## Bar Charts
 

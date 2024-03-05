@@ -18,7 +18,8 @@ Imports:
     glue,
     extrafont,
     ggrepel,
-    magick
+    magick,
+    purrr
 Suggests: 
     knitr,
     rmarkdown,
@@ -30,3 +31,5 @@ Suggests:
     survivoR
 Language: en-US
 VignetteBuilder: knitr
+Depends: 
+    R (>= 2.10)

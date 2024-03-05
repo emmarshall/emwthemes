@@ -1,0 +1,361 @@
+ID,outcome,probcause,confidence_1,worse_error,Age,Gender,Race,Education,Employment,condition,prob_drugs,prob_firearm,prob_finance,prob_nothing,knowitallalong,difficultpredict,clearvivid,foreseeable,cleardecision,fairdecision,otherdecision,responsibledecision,overalldecision,believable_1,believable_2,believable_3,believable_4,believable_5,relevant_1,relevant_2,relevant_3,relevant_4,relevant_5,important_1,important_2,important_3,important_4,important_5
+001,expected,No,1,Yes,50,Trans*,White,GED or Alternative Credential,Student,expected,33,27,19,21,4,3,3,4,3,5,3,3,3,6,7,6,5,7,5,6,8,6,5,5,6,9,7,3
+002,surprise,Yes,2,Yes,52,Male,White,Regular High School Diploma,Student,surprise,41,24,23,12,5,2,2,3,5,3,4,2,4,6,7,6,4,7,3,3,5,4,2,5,8,8,6,4
+003,surprise,No,3,No,54,Trans*,Hispanic,Regular High School Diploma,Part Time,surprise,0,60,12,28,4,1,1,3,3,2,3,4,4,7,7,7,4,6,3,5,8,6,3,5,4,7,5,3
+004,surprise,Yes,2,No,55,Female,White,Associate's Degree,Full Time,surprise,0,52,47,1,3,3,1,4,3,3,4,3,4,8,8,6,3,6,4,5,8,8,4,4,5,7,8,5
+005,expected,Yes,5,Yes,35,Trans*,Hispanic,Nursery School to 8th Grade,Part Time,expected,52,6,34,8,3,1,3,5,2,3,3,3,5,6,7,7,6,7,3,5,6,5,4,3,4,9,4,5
+006,before,Yes,4,No,60,Trans*,White,"Some College, 1 or More Years, No Degree",Full Time,before,4,12,16,68,3,1,1,5,4,3,5,2,4,6,6,5,6,7,3,5,6,4,4,6,6,6,5,5
+007,surprise,No,1,Yes,46,Female,White,Master's Degree,Part Time,surprise,27,21,34,18,4,2,1,5,5,5,3,5,4,5,4,5,4,7,4,4,6,6,5,4,4,9,6,5
+008,before,Yes,6,No,67,Trans*,Hispanic,Associate's Degree,Student,before,5,7,75,13,4,2,2,3,2,4,4,4,4,8,6,8,3,6,4,3,8,4,4,5,5,8,7,4
+009,surprise,No,7,No,56,Female,White,Associate's Degree,Full Time,surprise,5,2,4,89,3,3,1,4,5,4,3,5,4,6,8,7,5,7,2,5,8,6,6,5,5,7,7,5
+010,before,No,1,Yes,71,Male,White,Master's Degree,Full Time,before,36,8,33,23,4,2,1,4,4,4,3,5,3,7,6,7,6,7,3,6,7,5,3,6,5,7,5,3
+011,expected,No,2,Yes,54,Trans*,Black,"Some College, Less than 1 Year",Full Time,expected,72,8,12,8,4,2,1,2,4,4,3,3,5,7,7,7,5,7,3,4,6,5,4,5,4,7,6,6
+012,expected,Yes,3,Yes,71,Female,White,Associate's Degree,Full Time,expected,58,6,20,16,3,3,1,3,4,5,5,3,5,6,7,8,3,6,3,3,5,7,6,3,8,8,6,5
+013,before,No,4,Yes,66,Female,White,"Some College, 1 or More Years, No Degree",Part Time,before,0,11,18,71,4,3,2,5,3,5,2,2,4,7,5,6,4,5,6,5,6,6,5,5,5,8,5,4
+014,before,No,3,Yes,59,Male,White,Regular High School Diploma,Full Time,before,37,28,28,7,3,2,2,4,6,4,4,2,5,4,7,5,4,4,4,5,6,4,5,4,5,9,6,4
+015,before,Yes,3,Yes,63,Trans*,Black,Regular High School Diploma,Full Time,before,13,20,36,31,3,3,2,4,3,3,4,4,5,5,9,6,5,7,3,6,9,6,4,3,5,9,5,5
+016,before,Yes,5,No,40,Trans*,Asian,Associate's Degree,Full Time,before,41,11,35,13,5,2,1,4,4,3,5,3,4,5,5,7,4,6,2,4,8,4,5,5,5,9,5,4
+017,surprise,Yes,7,No,48,Trans*,Asian,Master's Degree,Full Time,surprise,13,47,1,39,3,3,3,3,3,4,4,3,4,8,8,6,5,6,3,5,8,4,5,4,6,6,7,5
+018,before,No,7,Yes,66,Female,White,"9th Grade to 12th Grade, No Diploma",Retired,before,31,6,46,17,4,3,3,5,3,4,3,3,4,5,7,6,6,6,3,4,7,4,4,4,5,7,5,4
+019,before,No,5,No,58,Trans*,White,"Some College, 1 or More Years, No Degree",Student,before,2,22,31,45,3,3,2,4,4,4,3,3,4,8,6,8,5,5,3,5,9,5,5,5,5,7,4,5
+020,surprise,No,1,No,59,Female,Asian,Bachelor's Degree,Full Time,surprise,2,8,21,69,4,1,1,3,3,3,3,4,4,6,5,5,3,6,3,5,7,6,3,5,6,6,5,3
+021,surprise,No,6,Yes,69,Female,White,Professional School Degree,Full Time,surprise,29,44,14,13,4,1,1,4,4,4,4,3,4,5,7,7,5,5,4,5,8,6,4,6,5,7,3,4
+022,surprise,Yes,6,Yes,52,Trans*,White,"9th Grade to 12th Grade, No Diploma",Unemployed,surprise,16,14,38,32,2,1,1,3,4,3,4,3,5,8,6,7,4,6,3,6,9,4,3,4,5,7,3,4
+023,surprise,No,6,Yes,64,Male,White,Associate's Degree,Full Time,surprise,12,62,19,7,4,3,2,5,5,4,6,3,4,8,7,7,4,5,5,3,7,5,6,4,5,9,6,3
+024,surprise,Yes,5,No,71,Trans*,White,"Some College, 1 or More Years, No Degree",Full Time,surprise,5,58,30,7,3,3,1,3,3,4,4,3,5,7,9,7,4,5,5,5,7,3,3,6,4,9,5,5
+025,before,Yes,6,Yes,65,Female,White,Professional School Degree,Full Time,before,1,52,15,32,3,2,1,3,3,2,4,2,3,4,8,5,4,6,4,5,7,4,5,5,4,9,7,5
+026,expected,No,3,Yes,51,Male,White,"Some College, 1 or More Years, No Degree",Unemployed,expected,46,15,39,0,2,1,2,4,4,4,4,2,4,6,5,7,3,4,3,5,9,6,4,5,4,7,7,6
+027,surprise,Yes,1,Yes,49,Trans*,Black,Bachelor's Degree,Full Time,surprise,52,25,11,12,3,2,1,5,3,4,3,2,2,8,7,9,3,6,5,5,6,5,4,4,6,8,6,3
+028,before,Yes,1,No,35,Male,White,Nursery School to 8th Grade,Full Time,before,14,44,24,18,3,2,2,3,4,4,3,2,4,6,7,7,5,4,5,5,9,2,4,5,6,8,5,4
+029,before,Yes,5,No,54,Female,Black,Doctorate Degree,Full Time,before,25,36,30,9,4,2,1,5,3,5,3,4,3,7,6,6,5,5,4,3,8,6,5,4,6,8,5,3
+030,expected,Yes,5,No,70,Male,White,Bachelor's Degree,Unemployed,expected,16,11,8,65,3,1,1,2,4,3,5,4,4,6,7,7,6,5,6,4,7,4,5,4,5,9,4,4
+031,expected,No,5,No,45,Male,White,Regular High School Diploma,Full Time,expected,27,0,8,65,4,2,1,5,4,4,4,5,4,5,6,6,3,6,5,5,9,4,5,4,5,8,4,3
+032,surprise,Yes,2,No,72,Trans*,Hispanic,Regular High School Diploma,Full Time,surprise,5,13,16,66,4,2,2,4,4,3,3,3,3,7,6,7,4,4,3,3,6,6,6,6,4,6,5,4
+033,surprise,No,5,No,56,Male,White,Bachelor's Degree,Full Time,surprise,52,19,18,11,4,1,1,4,4,2,5,3,5,6,7,7,4,7,6,6,6,5,4,5,5,7,6,6
+034,surprise,No,6,Yes,44,Trans*,Black,"9th Grade to 12th Grade, No Diploma",Full Time,surprise,61,13,2,24,3,1,3,4,3,4,4,4,3,8,5,6,6,6,7,5,9,5,4,4,5,8,5,5
+035,before,No,1,No,39,Male,White,Master's Degree,Full Time,before,26,12,16,46,4,2,1,5,4,3,4,4,3,6,6,7,6,7,2,5,6,5,4,6,6,8,4,5
+036,before,Yes,1,No,47,Trans*,Hispanic,Regular High School Diploma,Full Time,before,8,40,30,22,2,3,1,5,3,4,3,2,4,5,7,8,6,7,5,5,6,7,3,6,5,9,8,5
+037,before,No,6,No,52,Female,White,Regular High School Diploma,Full Time,before,5,13,30,52,4,2,1,3,3,3,4,3,4,6,6,7,3,5,4,6,8,6,5,3,8,7,7,4
+038,expected,No,2,No,43,Female,Black,"9th Grade to 12th Grade, No Diploma",Unemployed,expected,10,40,33,17,3,3,1,5,3,4,2,3,4,5,8,6,5,5,2,6,9,7,4,3,4,6,6,3
+039,surprise,Yes,7,Yes,66,Trans*,White,"Some College, 1 or More Years, No Degree",Full Time,surprise,36,25,31,8,4,2,1,4,4,4,3,1,4,5,7,6,3,5,5,6,7,4,4,3,5,8,5,5
+040,surprise,Yes,5,No,58,Female,White,"Some College, 1 or More Years, No Degree",Full Time,surprise,0,12,56,32,4,2,2,4,3,5,5,4,5,6,9,6,4,7,3,4,5,6,3,3,4,8,4,6
+041,before,No,3,Yes,61,Trans*,Hispanic,GED or Alternative Credential,Full Time,before,54,11,33,2,4,3,1,4,4,4,3,1,4,5,6,8,4,7,4,4,7,5,4,6,5,7,4,6
+042,expected,Yes,2,Yes,43,Trans*,Black,"9th Grade to 12th Grade, No Diploma",Full Time,expected,4,60,13,23,3,1,2,4,4,3,4,2,4,7,7,8,5,5,4,3,5,6,4,6,6,9,4,4
+043,before,No,2,No,69,Female,White,Associate's Degree,Full Time,before,14,37,7,42,3,1,1,3,5,2,4,3,3,8,6,6,4,8,2,4,7,6,4,4,4,6,7,4
+044,before,Yes,4,Yes,64,Male,Hispanic,Regular High School Diploma,Part Time,before,5,92,2,1,4,1,2,3,4,3,2,3,3,8,6,6,5,8,4,4,7,7,3,4,5,9,5,5
+045,surprise,Yes,3,Yes,64,Trans*,White,"Some College, Less than 1 Year",Full Time,surprise,31,14,26,29,3,3,1,5,5,3,4,1,5,6,7,6,5,7,4,5,7,4,3,4,7,9,7,6
+046,surprise,No,7,No,45,Male,White,Regular High School Diploma,Unemployed,surprise,1,48,30,21,4,2,1,4,3,2,3,4,4,8,5,6,5,5,3,6,7,4,4,4,5,7,7,5
+047,surprise,Yes,5,No,63,Trans*,White,Associate's Degree,Part Time,surprise,6,50,27,17,1,2,3,3,4,3,3,3,4,4,7,8,6,5,4,6,8,4,4,4,3,7,5,5
+048,expected,Yes,4,No,52,Female,White,Associate's Degree,Full Time,expected,19,37,10,34,2,2,1,4,4,4,4,3,3,7,5,7,6,6,5,4,7,5,4,3,5,7,6,4
+049,before,No,1,No,52,Trans*,White,Bachelor's Degree,Unemployed,before,22,14,61,3,5,2,1,5,4,3,3,3,2,5,7,6,6,7,3,4,7,5,4,4,5,8,3,7
+050,before,No,1,Yes,62,Female,White,"Some College, 1 or More Years, No Degree",Full Time,before,14,16,28,42,4,1,2,4,3,2,4,4,3,7,5,6,4,6,2,4,7,7,4,4,5,9,6,5
+051,before,Yes,4,Yes,41,Female,White,"Some College, Less than 1 Year",Student,before,43,18,22,17,2,3,1,4,2,2,3,4,4,5,8,7,3,5,4,4,8,6,5,3,5,6,6,5
+052,surprise,No,4,Yes,49,Female,Hispanic,Associate's Degree,Retired,surprise,50,3,47,0,3,3,2,4,5,2,3,3,3,6,5,5,2,7,3,6,5,5,5,5,7,6,6,5
+053,expected,No,1,No,72,Trans*,White,Regular High School Diploma,Full Time,expected,23,16,59,2,3,1,1,5,4,3,3,3,4,6,9,7,4,6,3,3,6,7,2,6,5,7,4,5
+054,before,Yes,6,Yes,48,Trans*,Other,"9th Grade to 12th Grade, No Diploma",Full Time,before,38,38,12,12,3,2,1,4,5,3,3,3,3,7,7,7,5,4,3,5,6,5,4,6,6,7,5,5
+055,surprise,No,4,No,63,Female,White,Regular High School Diploma,Full Time,surprise,40,1,34,25,4,2,1,5,4,4,3,2,3,7,8,3,5,5,4,6,7,8,4,4,4,9,4,3
+056,expected,Yes,1,No,54,Female,White,"Some College, Less than 1 Year",Unemployed,expected,63,6,20,11,3,2,2,4,2,4,3,3,4,6,5,7,4,7,4,4,6,7,6,5,6,8,8,5
+057,before,Yes,2,No,71,Trans*,White,Master's Degree,Full Time,before,22,41,5,32,3,2,1,3,4,2,3,3,3,5,6,7,4,6,3,5,4,4,7,5,5,9,4,5
+058,surprise,No,3,Yes,65,Female,Black,Regular High School Diploma,Student,surprise,13,15,28,44,4,1,1,5,2,4,3,4,3,5,9,6,4,6,3,3,9,4,4,3,6,9,7,4
+059,before,Yes,6,No,58,Trans*,Hispanic,Bachelor's Degree,Part Time,before,9,9,6,76,3,2,2,4,4,4,5,3,5,7,9,5,5,5,4,4,6,5,4,2,5,7,7,3
+060,expected,No,6,No,57,Male,White,GED or Alternative Credential,Full Time,expected,67,7,8,18,4,3,2,4,5,3,3,3,2,4,5,6,7,6,3,6,6,6,4,5,5,8,6,3
+061,surprise,Yes,5,Yes,57,Trans*,White,Regular High School Diploma,Full Time,surprise,28,31,41,0,4,2,1,4,4,5,4,3,2,7,8,8,4,6,6,5,7,5,4,4,6,7,5,4
+062,expected,Yes,1,Yes,43,Trans*,White,"Some College, 1 or More Years, No Degree",Part Time,expected,26,38,29,7,4,1,2,5,2,4,3,4,3,7,6,6,3,7,5,5,8,4,5,5,4,8,5,5
+063,surprise,No,7,No,71,Male,White,"Some College, Less than 1 Year",Student,surprise,16,31,25,28,3,1,1,4,5,4,4,2,4,6,7,5,4,7,4,5,6,6,6,5,4,8,7,6
+064,expected,No,7,Yes,38,Trans*,White,"Some College, Less than 1 Year",Full Time,expected,34,15,38,13,4,3,1,5,4,3,4,3,4,8,6,7,4,6,3,6,7,5,5,5,6,8,5,6
+065,before,Yes,5,Yes,38,Male,White,"Some College, Less than 1 Year",Full Time,before,4,15,29,52,4,2,2,4,4,4,4,3,3,8,7,6,5,7,4,6,7,5,3,4,6,7,5,4
+066,before,Yes,5,Yes,41,Male,White,"Some College, 1 or More Years, No Degree",Full Time,before,0,42,29,29,5,2,1,5,3,4,3,4,4,7,5,7,1,8,4,5,8,6,6,4,5,9,6,5
+067,surprise,Yes,4,No,47,Female,Hispanic,Bachelor's Degree,Student,surprise,8,63,20,9,2,1,2,4,4,3,4,3,5,7,6,5,6,4,5,3,9,6,5,5,4,8,4,6
+068,surprise,No,5,No,67,Male,Hispanic,Bachelor's Degree,Student,surprise,8,17,63,12,4,2,2,5,2,4,4,3,4,6,6,6,7,8,5,6,8,5,5,4,8,7,5,4
+069,expected,No,3,No,69,Female,White,Associate's Degree,Full Time,expected,24,23,42,11,3,2,1,4,2,4,3,3,3,6,7,8,5,5,4,5,6,5,5,4,4,9,6,4
+070,expected,Yes,1,No,37,Trans*,Hispanic,Bachelor's Degree,Retired,expected,12,51,37,0,3,2,2,3,3,3,4,4,4,7,6,8,7,7,4,5,8,5,3,4,7,9,5,3
+071,before,No,3,Yes,38,Male,White,Associate's Degree,Full Time,before,30,5,35,30,3,3,1,4,3,3,3,3,3,6,6,4,5,5,3,5,6,5,5,3,6,7,7,5
+072,expected,No,6,Yes,63,Male,White,Nursery School to 8th Grade,Unemployed,expected,30,12,56,2,4,2,1,4,4,3,4,4,4,7,8,7,3,9,4,5,6,7,5,4,6,8,4,4
+073,surprise,Yes,2,No,40,Male,White,Bachelor's Degree,Full Time,surprise,10,19,32,39,4,1,1,4,3,4,3,3,4,9,6,8,5,8,4,5,7,4,5,4,5,8,6,5
+074,expected,Yes,3,Yes,37,Female,Asian,Bachelor's Degree,Full Time,expected,48,17,16,19,5,1,1,4,3,4,4,3,4,8,6,6,4,7,4,5,7,6,4,3,7,8,5,4
+075,before,No,3,No,44,Male,Hispanic,Regular High School Diploma,Full Time,before,56,6,19,19,4,1,1,4,3,5,3,4,3,6,5,7,6,6,4,4,8,4,4,2,4,9,4,4
+076,surprise,No,5,Yes,35,Male,White,Regular High School Diploma,Full Time,surprise,18,56,3,23,4,2,1,4,3,5,2,3,2,5,8,7,3,5,5,5,8,8,5,5,7,8,5,5
+077,expected,No,7,No,71,Trans*,White,Bachelor's Degree,Full Time,expected,8,24,27,41,2,3,2,4,2,5,4,4,4,7,6,8,3,7,4,7,8,4,5,4,5,9,5,7
+078,before,No,3,Yes,42,Trans*,White,Regular High School Diploma,Retired,before,31,50,11,8,4,1,2,5,3,3,4,3,4,6,7,7,3,6,3,4,8,8,5,3,7,8,7,5
+079,before,Yes,6,Yes,53,Trans*,Hispanic,Bachelor's Degree,Unemployed,before,17,5,7,71,4,1,2,4,4,4,3,3,6,7,6,7,4,6,3,4,7,7,1,4,6,7,6,5
+080,surprise,No,1,No,53,Male,White,"Some College, Less than 1 Year",Full Time,surprise,8,17,5,70,5,2,2,4,4,3,2,2,3,7,5,6,5,5,4,4,6,5,3,5,5,5,5,4
+081,expected,No,1,Yes,66,Trans*,Black,"Some College, Less than 1 Year",Full Time,expected,49,0,28,23,3,3,2,3,5,4,4,1,5,6,5,8,5,5,4,5,7,6,5,5,5,8,7,6
+082,before,Yes,2,Yes,70,Trans*,White,Bachelor's Degree,Retired,before,3,34,12,51,3,3,1,3,4,4,5,4,4,7,7,5,4,5,5,6,9,4,4,6,5,9,6,6
+083,surprise,Yes,2,Yes,35,Male,Black,"9th Grade to 12th Grade, No Diploma",Full Time,surprise,24,40,27,9,4,4,1,4,4,3,3,4,5,6,6,7,3,7,3,4,6,4,2,4,4,7,5,5
+084,before,Yes,1,Yes,53,Male,Black,Master's Degree,Retired,before,1,15,61,23,2,2,2,4,4,3,2,3,4,5,7,6,6,6,4,5,6,5,4,5,5,9,5,5
+085,before,Yes,2,No,58,Trans*,White,Associate's Degree,Part Time,before,29,4,54,13,5,2,1,3,3,5,4,3,4,7,7,6,4,4,2,3,9,6,3,3,5,8,6,5
+086,surprise,Yes,2,Yes,42,Male,White,Bachelor's Degree,Full Time,surprise,13,27,5,55,4,3,1,4,3,4,4,2,4,8,5,7,3,7,5,6,7,6,4,5,5,6,4,4
+087,expected,Yes,6,Yes,41,Male,Hispanic,Regular High School Diploma,Student,expected,24,30,13,33,3,1,1,3,4,3,3,3,4,7,5,6,4,5,6,4,7,8,5,5,6,5,7,4
+088,expected,No,6,Yes,65,Male,Asian,Master's Degree,Full Time,expected,1,31,15,53,4,2,2,5,4,3,4,3,4,5,6,8,5,8,2,5,7,4,6,6,4,7,6,5
+089,expected,Yes,4,Yes,42,Female,White,GED or Alternative Credential,Unemployed,expected,2,16,43,39,3,2,3,3,4,5,5,5,3,5,5,5,4,6,5,5,7,5,4,6,4,9,7,6
+090,before,Yes,7,Yes,71,Male,Hispanic,"Some College, 1 or More Years, No Degree",Full Time,before,3,53,23,21,5,2,2,4,4,3,2,4,3,7,8,9,4,5,5,5,7,5,3,5,6,8,6,4
+091,expected,No,3,Yes,35,Male,Black,Regular High School Diploma,Full Time,expected,5,57,24,14,4,2,3,3,5,4,3,3,4,8,6,7,5,6,2,5,7,5,5,4,6,7,6,4
+092,before,No,2,Yes,37,Male,White,"9th Grade to 12th Grade, No Diploma",Student,before,15,10,29,46,2,3,1,4,3,5,4,3,3,5,6,7,6,6,3,6,8,6,3,4,5,7,7,2
+093,before,Yes,7,Yes,62,Female,White,Bachelor's Degree,Full Time,before,31,53,7,9,2,3,2,4,2,3,3,3,5,6,5,7,4,7,6,4,8,4,3,4,7,7,7,5
+094,surprise,Yes,5,No,58,Female,White,Bachelor's Degree,Unemployed,surprise,39,11,41,9,5,2,2,4,3,3,2,2,2,8,4,7,4,6,5,5,9,5,4,5,6,9,4,5
+095,expected,No,2,Yes,54,Male,White,Regular High School Diploma,Unemployed,expected,4,49,45,2,4,1,1,4,4,3,4,3,3,6,7,5,6,5,4,5,6,7,5,5,5,7,4,3
+096,surprise,Yes,3,No,41,Male,White,"9th Grade to 12th Grade, No Diploma",Full Time,surprise,88,1,7,4,4,1,2,4,4,3,6,3,4,6,6,6,6,6,4,5,8,6,5,4,6,7,7,2
+097,expected,No,4,No,50,Female,Black,Bachelor's Degree,Part Time,expected,45,4,7,44,3,3,3,5,3,2,2,3,3,6,8,6,3,5,4,5,8,3,5,5,5,8,6,6
+098,before,Yes,5,Yes,51,Male,White,"Some College, 1 or More Years, No Degree",Full Time,before,5,28,23,44,3,2,1,4,3,3,2,3,3,7,9,7,3,5,4,4,7,4,4,4,6,9,5,3
+099,expected,Yes,3,No,48,Female,Hispanic,"Some College, 1 or More Years, No Degree",Full Time,expected,10,2,16,72,4,3,2,3,4,3,4,3,4,6,9,6,4,7,5,4,7,5,6,4,4,6,6,5
+100,before,No,3,Yes,60,Female,White,Regular High School Diploma,Full Time,before,49,3,10,38,4,3,2,4,4,4,4,3,4,7,5,6,5,7,5,6,6,5,4,3,6,7,4,5
+101,before,No,7,Yes,61,Trans*,Black,Bachelor's Degree,Student,before,17,25,18,40,2,2,1,4,3,4,4,4,3,7,4,6,4,6,2,6,8,6,5,5,5,8,4,5
+102,surprise,Yes,4,No,72,Trans*,White,"Some College, 1 or More Years, No Degree",Full Time,surprise,9,4,7,80,3,2,3,5,2,5,3,4,6,8,6,6,4,7,5,3,8,6,4,6,7,8,6,6
+103,surprise,Yes,2,Yes,43,Female,White,Bachelor's Degree,Full Time,surprise,58,16,18,8,4,2,2,5,3,3,4,3,3,7,7,7,6,9,6,5,8,5,3,5,4,7,7,5
+104,before,No,4,Yes,54,Female,White,"Some College, 1 or More Years, No Degree",Full Time,before,15,10,45,30,3,2,1,4,2,4,4,3,4,5,6,5,3,6,5,5,8,3,7,4,3,8,5,6
+105,expected,Yes,4,Yes,44,Trans*,White,Professional School Degree,Full Time,expected,49,21,5,25,4,3,1,3,4,5,3,5,4,5,5,6,3,8,3,4,8,4,3,5,5,8,7,5
+106,before,No,7,Yes,48,Male,Hispanic,Bachelor's Degree,Retired,before,44,3,8,45,3,1,1,4,2,3,4,3,3,8,5,7,4,4,3,5,6,4,5,5,4,7,6,4
+107,before,Yes,3,Yes,68,Trans*,White,"Some College, Less than 1 Year",Full Time,before,20,16,33,31,2,4,2,3,2,3,4,3,4,7,4,6,3,5,3,5,9,5,5,4,4,6,6,5
+108,expected,Yes,4,Yes,53,Female,White,"Some College, 1 or More Years, No Degree",Unemployed,expected,0,94,5,1,5,3,2,4,3,5,4,3,5,6,6,8,3,4,3,3,8,7,5,5,8,8,5,2
+109,expected,No,4,No,60,Trans*,White,Regular High School Diploma,Full Time,expected,47,24,15,14,5,2,2,4,2,4,3,3,4,6,7,7,4,7,4,6,9,5,3,5,7,7,6,7
+110,expected,No,1,No,52,Trans*,Black,Bachelor's Degree,Student,expected,1,11,71,17,3,2,2,4,4,2,4,3,4,5,6,5,2,7,3,4,8,6,3,6,5,9,7,2
+111,surprise,No,1,No,46,Male,Hispanic,"Some College, 1 or More Years, No Degree",Unemployed,surprise,4,10,11,75,4,1,2,4,2,4,3,3,3,6,8,6,4,6,4,5,8,5,4,5,5,5,7,5
+112,surprise,No,6,No,40,Female,Hawaiian,Regular High School Diploma,Part Time,surprise,7,43,45,5,3,1,1,4,4,3,6,3,4,6,7,9,5,7,3,3,7,7,7,5,7,7,4,5
+113,expected,Yes,3,No,70,Trans*,Hispanic,Doctorate Degree,Full Time,expected,9,5,83,3,2,1,1,4,3,4,4,4,3,5,5,6,3,7,5,6,7,4,5,5,5,6,7,5
+114,expected,Yes,5,Yes,43,Trans*,White,"9th Grade to 12th Grade, No Diploma",Part Time,expected,38,26,21,15,3,2,2,4,3,2,4,2,4,4,6,9,2,7,3,5,5,6,3,4,7,8,8,2
+115,surprise,Yes,5,Yes,37,Female,White,Regular High School Diploma,Full Time,surprise,4,14,64,18,3,3,1,5,4,2,5,3,4,5,5,8,4,6,5,4,9,6,5,6,7,5,6,6
+116,before,Yes,1,Yes,66,Female,Asian,Associate's Degree,Full Time,before,37,48,5,10,4,1,1,4,4,3,3,2,3,5,6,6,5,7,5,8,7,8,2,3,6,8,5,4
+117,surprise,Yes,5,Yes,57,Trans*,Hispanic,Regular High School Diploma,Student,surprise,39,13,29,19,4,2,2,4,5,4,5,3,3,6,8,8,5,6,4,5,9,4,5,6,6,8,6,4
+118,expected,No,1,Yes,47,Trans*,White,Regular High School Diploma,Full Time,expected,2,21,14,63,4,2,2,4,2,4,4,2,5,3,6,5,6,7,3,4,8,6,5,3,5,8,8,5
+119,surprise,No,6,Yes,39,Male,White,Master's Degree,Full Time,surprise,6,41,6,47,4,2,2,3,2,2,4,4,3,4,6,6,3,6,5,3,9,4,4,4,4,7,4,5
+120,expected,Yes,6,Yes,68,Male,Black,Bachelor's Degree,Full Time,expected,24,24,1,51,3,1,1,4,3,4,3,3,4,5,8,5,6,5,3,7,8,5,3,2,5,8,8,5
+121,surprise,Yes,5,Yes,46,Female,Black,Regular High School Diploma,Full Time,surprise,35,7,50,8,2,1,1,4,4,4,4,5,5,8,8,6,5,5,6,5,6,7,4,6,7,9,8,6
+122,before,No,7,Yes,38,Male,White,Bachelor's Degree,Student,before,32,56,3,9,4,1,2,5,4,4,5,4,4,4,5,6,5,8,4,7,7,6,4,4,5,9,6,4
+123,surprise,No,6,No,49,Male,Hispanic,Bachelor's Degree,Full Time,surprise,18,21,61,0,5,1,1,3,4,5,3,5,5,6,5,5,6,6,5,5,7,5,4,5,5,9,6,5
+124,surprise,No,1,Yes,56,Male,White,GED or Alternative Credential,Student,surprise,34,9,8,49,4,2,1,4,4,4,4,5,4,7,6,4,5,6,6,5,9,6,4,5,8,9,6,6
+125,before,Yes,7,No,46,Trans*,White,Bachelor's Degree,Unemployed,before,2,23,32,43,3,2,1,3,6,5,4,5,4,8,8,6,4,8,5,6,7,4,6,5,7,8,6,6
+126,before,No,4,No,65,Male,White,"Some College, 1 or More Years, No Degree",Full Time,before,18,20,42,20,4,2,3,2,4,4,5,6,6,6,7,8,5,9,2,7,8,5,3,7,6,7,7,4
+127,before,No,6,Yes,69,Male,White,Associate's Degree,Full Time,before,79,0,5,16,5,1,2,4,6,4,5,4,5,8,5,8,4,5,6,5,8,5,4,3,8,7,4,4
+128,expected,No,6,Yes,41,Male,Black,Associate's Degree,Retired,expected,19,18,48,15,3,2,1,3,6,3,6,3,4,6,5,7,4,6,5,5,8,7,5,4,6,4,7,5
+129,surprise,No,7,Yes,65,Trans*,Hispanic,"9th Grade to 12th Grade, No Diploma",Full Time,surprise,51,17,24,8,5,4,1,3,6,3,4,5,5,8,4,8,3,5,5,6,6,6,3,6,5,8,7,3
+130,expected,No,5,Yes,43,Female,Hispanic,Regular High School Diploma,Retired,expected,2,48,37,13,4,2,2,4,4,4,5,5,5,4,8,8,6,5,5,5,9,6,5,7,6,7,5,4
+131,surprise,No,6,No,72,Female,Hispanic,"Some College, 1 or More Years, No Degree",Student,surprise,25,37,3,35,4,3,1,4,3,3,3,4,4,6,6,7,6,7,4,5,6,4,3,6,7,7,7,6
+132,surprise,No,7,No,58,Female,White,GED or Alternative Credential,Full Time,surprise,11,4,67,18,5,1,2,5,4,3,5,4,5,8,7,5,4,6,5,5,7,6,4,5,6,7,6,5
+133,expected,No,4,No,43,Female,Black,Regular High School Diploma,Full Time,expected,39,1,40,20,5,1,2,5,3,3,4,5,4,6,6,6,3,7,4,6,7,7,4,5,8,7,6,6
+134,expected,Yes,3,Yes,51,Trans*,Hispanic,Bachelor's Degree,Full Time,expected,48,24,8,20,4,2,1,3,4,2,2,5,5,7,8,7,6,8,6,6,6,7,4,6,7,8,6,5
+135,surprise,Yes,4,Yes,42,Male,White,"Some College, Less than 1 Year",Full Time,surprise,7,35,11,47,4,2,1,3,3,2,6,4,4,5,7,5,5,5,6,7,7,6,5,4,6,6,5,6
+136,surprise,No,3,No,38,Trans*,White,Regular High School Diploma,Part Time,surprise,12,71,2,15,5,1,2,4,4,4,4,5,3,7,5,7,5,5,6,6,8,5,3,3,5,7,6,4
+137,expected,No,5,Yes,59,Male,White,Associate's Degree,Full Time,expected,60,0,36,4,4,3,2,3,2,5,6,6,5,7,7,7,3,6,4,6,7,5,3,5,6,6,7,3
+138,surprise,Yes,2,No,44,Trans*,White,"9th Grade to 12th Grade, No Diploma",Full Time,surprise,61,12,22,5,4,1,2,3,5,3,4,5,4,8,8,7,6,6,6,4,6,7,4,5,5,7,4,5
+139,surprise,No,4,No,36,Male,Black,Regular High School Diploma,Full Time,surprise,37,4,14,45,4,2,1,4,5,3,3,5,4,4,6,6,4,7,4,5,7,6,2,5,7,8,8,4
+140,expected,No,5,Yes,36,Male,White,"9th Grade to 12th Grade, No Diploma",Full Time,expected,27,68,5,0,3,3,1,4,3,4,6,4,6,8,6,8,5,4,5,7,6,5,3,4,6,8,4,5
+141,expected,No,3,Yes,67,Male,Black,"9th Grade to 12th Grade, No Diploma",Full Time,expected,24,24,22,30,5,2,1,5,5,5,5,6,6,7,8,6,6,5,6,6,7,5,5,8,6,8,6,6
+142,before,Yes,2,No,63,Male,Hispanic,Regular High School Diploma,Retired,before,0,2,16,82,4,3,1,4,4,3,6,3,5,7,8,6,6,7,4,5,5,5,3,6,6,7,5,6
+143,surprise,Yes,4,Yes,70,Male,White,Regular High School Diploma,Full Time,surprise,14,62,4,20,3,2,1,3,3,4,5,6,5,6,7,7,4,6,6,5,8,5,5,4,7,7,6,5
+144,surprise,Yes,6,Yes,45,Male,White,Regular High School Diploma,Full Time,surprise,6,16,20,58,4,3,1,4,4,2,5,5,6,7,7,8,5,7,5,6,7,6,4,5,6,7,5,5
+145,before,Yes,6,Yes,43,Female,Asian,Regular High School Diploma,Part Time,before,15,75,0,10,5,2,1,4,4,4,4,5,4,7,7,5,3,5,6,7,7,4,7,7,5,8,7,5
+146,surprise,Yes,6,No,40,Male,Black,Bachelor's Degree,Part Time,surprise,30,17,5,48,3,2,1,4,6,4,5,4,5,7,6,7,4,8,5,5,6,4,6,5,7,8,5,5
+147,expected,No,6,No,42,Male,White,Doctorate Degree,Full Time,expected,42,16,13,29,3,2,2,3,4,4,5,7,5,8,8,5,5,5,3,7,5,4,4,3,4,8,8,5
+148,before,No,4,Yes,67,Male,White,Associate's Degree,Retired,before,25,11,58,6,5,2,2,5,4,4,5,5,4,7,8,9,5,5,4,7,9,6,5,6,7,7,7,5
+149,before,Yes,4,No,64,Female,Black,Regular High School Diploma,Full Time,before,24,8,29,39,4,3,3,5,4,5,4,6,6,7,8,6,5,5,6,7,9,5,6,5,6,8,3,4
+150,before,No,3,Yes,45,Trans*,White,Regular High School Diploma,Full Time,before,23,32,10,35,5,1,2,5,5,3,5,5,4,6,8,5,6,6,5,6,6,5,4,4,6,8,5,6
+151,surprise,Yes,2,No,43,Female,White,Master's Degree,Part Time,surprise,25,42,5,28,5,3,1,3,4,4,5,5,5,7,6,5,6,6,5,4,8,4,5,4,5,8,7,4
+152,expected,No,7,No,53,Female,White,"9th Grade to 12th Grade, No Diploma",Retired,expected,79,3,4,14,3,2,2,3,4,4,5,3,5,7,6,5,4,5,6,7,6,5,3,5,5,7,5,6
+153,before,No,2,Yes,63,Male,White,"Some College, 1 or More Years, No Degree",Full Time,before,24,19,57,0,4,3,2,4,4,5,4,3,5,7,7,9,6,6,7,6,7,4,5,6,6,8,8,4
+154,surprise,Yes,1,No,70,Female,Asian,"Some College, Less than 1 Year",Full Time,surprise,16,38,29,17,5,3,1,3,4,4,5,5,5,8,6,7,6,7,5,7,6,4,4,4,7,9,6,5
+155,expected,Yes,6,No,71,Female,White,Nursery School to 8th Grade,Full Time,expected,6,48,24,22,4,1,1,3,3,4,6,4,5,8,8,6,4,4,4,6,8,4,4,3,5,6,5,3
+156,before,No,4,No,46,Female,White,Nursery School to 8th Grade,Full Time,before,0,33,51,16,3,2,1,4,6,4,5,5,4,6,4,7,4,6,4,6,9,6,4,4,7,8,4,5
+157,expected,Yes,1,Yes,55,Trans*,Hispanic,Doctorate Degree,Student,expected,24,55,9,12,5,3,3,4,5,2,6,6,5,5,7,7,5,7,4,6,7,6,6,4,8,8,7,5
+158,surprise,No,4,No,60,Trans*,Hispanic,Associate's Degree,Full Time,surprise,26,21,30,23,5,1,1,2,4,4,5,5,5,9,6,6,2,6,5,7,6,6,3,5,7,6,7,5
+159,expected,Yes,7,Yes,62,Trans*,White,Master's Degree,Unemployed,expected,16,27,14,43,5,2,3,2,6,4,6,6,5,8,7,6,5,5,6,7,9,5,3,4,7,6,7,3
+160,before,No,7,Yes,39,Male,White,"Some College, 1 or More Years, No Degree",Full Time,before,3,2,91,4,5,2,1,4,4,3,5,6,6,7,7,7,5,4,4,5,6,5,5,5,8,9,4,4
+161,before,No,6,Yes,40,Female,White,"Some College, 1 or More Years, No Degree",Student,before,28,35,36,1,2,2,2,3,5,4,6,6,5,6,6,7,5,6,5,5,8,5,5,4,7,5,6,4
+162,surprise,Yes,2,No,55,Trans*,Bi-Racial,Regular High School Diploma,Full Time,surprise,3,24,11,62,5,3,3,3,5,4,5,5,4,7,9,6,6,5,4,8,6,5,4,8,7,9,6,2
+163,surprise,No,3,No,63,Trans*,White,Regular High School Diploma,Full Time,surprise,5,4,22,69,3,3,1,3,4,4,4,4,6,7,7,7,7,5,6,6,7,5,5,7,6,8,5,5
+164,expected,Yes,2,No,43,Male,White,Bachelor's Degree,Part Time,expected,69,3,12,16,5,3,1,3,4,3,5,5,6,8,8,7,4,7,4,5,9,4,5,6,6,7,7,5
+165,expected,Yes,7,Yes,65,Trans*,White,"Some College, Less than 1 Year",Student,expected,57,0,31,12,2,1,1,5,5,5,5,4,7,8,9,6,6,4,7,7,7,6,5,3,6,8,7,5
+166,before,No,2,No,52,Trans*,White,Associate's Degree,Full Time,before,41,16,19,24,4,3,1,4,4,4,4,4,3,7,6,8,5,5,4,5,6,5,3,3,6,7,7,5
+167,expected,No,3,No,62,Trans*,White,Regular High School Diploma,Full Time,expected,65,18,5,12,5,1,2,3,6,3,4,6,4,6,6,5,6,6,5,5,8,4,5,6,7,7,4,4
+168,expected,Yes,4,No,48,Female,Black,"Some College, 1 or More Years, No Degree",Student,expected,14,37,44,5,4,3,2,3,5,4,4,5,4,6,7,6,7,6,4,7,8,4,3,5,5,7,6,6
+169,surprise,Yes,1,No,50,Trans*,White,Regular High School Diploma,Full Time,surprise,46,34,6,14,5,3,1,5,5,5,5,5,6,8,6,6,6,5,5,6,6,6,5,6,5,7,6,6
+170,before,No,5,No,46,Female,Black,No Schooling Completed,Full Time,before,33,4,21,42,3,3,2,4,5,5,4,5,4,7,7,7,7,4,7,6,8,4,3,5,7,8,6,4
+171,expected,Yes,1,Yes,61,Female,White,Regular High School Diploma,Unemployed,expected,6,9,65,20,3,3,2,4,5,5,4,5,4,6,6,7,4,7,3,8,8,7,6,5,7,5,6,5
+172,surprise,Yes,1,No,49,Female,White,GED or Alternative Credential,Full Time,surprise,31,33,29,7,2,2,2,3,4,5,6,5,5,8,8,9,6,7,6,8,8,6,5,6,7,8,4,5
+173,before,Yes,1,Yes,60,Male,Black,Associate's Degree,Student,before,12,6,22,60,2,2,2,2,5,3,4,5,4,6,7,8,5,7,4,6,6,5,5,5,4,5,4,4
+174,expected,Yes,3,Yes,36,Female,White,"9th Grade to 12th Grade, No Diploma",Unemployed,expected,58,10,10,22,3,2,2,3,5,4,5,5,6,7,7,8,6,6,5,5,9,6,4,3,6,7,6,6
+175,before,Yes,1,No,47,Female,White,"Some College, 1 or More Years, No Degree",Full Time,before,13,4,52,31,5,2,1,2,4,4,4,4,5,5,6,8,5,5,5,6,6,3,4,6,5,9,7,6
+176,surprise,Yes,6,Yes,49,Male,White,Regular High School Diploma,Full Time,surprise,38,28,8,26,4,2,3,4,4,5,6,5,5,6,7,5,5,6,7,7,6,7,5,6,5,5,8,6
+177,surprise,Yes,5,No,46,Trans*,White,Doctorate Degree,Full Time,surprise,21,27,24,28,5,2,2,4,4,3,5,5,5,7,7,8,6,3,6,5,7,6,5,4,6,6,5,4
+178,before,Yes,5,Yes,68,Male,White,Bachelor's Degree,Full Time,before,51,26,11,12,3,1,2,4,5,4,4,5,5,6,6,9,5,4,6,9,8,7,4,3,5,9,4,5
+179,expected,Yes,7,No,52,Female,White,Regular High School Diploma,Full Time,expected,36,4,12,48,3,1,1,5,4,3,4,5,4,7,6,6,6,6,3,6,6,3,2,5,8,8,6,4
+180,surprise,Yes,4,Yes,44,Male,Black,Bachelor's Degree,Full Time,surprise,51,0,15,34,4,3,1,3,5,3,5,5,4,7,7,7,5,7,5,8,7,4,6,5,6,5,5,2
+181,before,No,3,No,69,Female,Hispanic,Regular High School Diploma,Full Time,before,12,3,83,2,4,1,1,5,5,4,5,5,5,7,6,7,4,7,5,5,8,4,4,4,6,7,5,6
+182,expected,Yes,7,No,36,Male,Bi-Racial,"9th Grade to 12th Grade, No Diploma",Retired,expected,1,6,13,80,4,2,2,2,4,2,4,5,5,6,8,7,6,6,4,6,5,3,3,2,7,9,4,5
+183,before,No,2,Yes,70,Trans*,White,"9th Grade to 12th Grade, No Diploma",Full Time,before,1,66,22,11,3,2,1,3,4,3,7,4,5,6,7,8,5,8,4,5,6,6,5,5,5,7,4,5
+184,before,Yes,2,No,56,Female,White,Regular High School Diploma,Unemployed,before,38,30,30,2,4,2,2,3,6,5,5,5,5,5,7,7,6,4,4,5,7,4,4,4,7,7,5,4
+185,before,Yes,2,Yes,56,Female,Hispanic,Associate's Degree,Unemployed,before,33,1,54,12,5,2,2,4,4,5,5,5,6,8,6,8,4,7,4,5,8,5,6,4,9,6,6,5
+186,expected,No,1,Yes,59,Trans*,Black,"Some College, Less than 1 Year",Full Time,expected,48,40,10,2,3,2,1,4,5,4,5,4,6,8,7,6,7,7,5,5,7,6,6,3,7,7,5,6
+187,surprise,No,1,No,48,Male,White,Regular High School Diploma,Unemployed,surprise,9,34,55,2,5,2,1,3,4,4,3,3,4,7,8,5,5,5,4,5,7,6,5,7,6,8,5,6
+188,before,No,5,No,66,Female,Black,Regular High School Diploma,Full Time,before,0,31,41,28,5,1,2,2,5,3,4,5,5,6,6,6,6,7,4,6,7,5,4,3,5,6,4,6
+189,expected,Yes,4,No,66,Male,Hispanic,GED or Alternative Credential,Full Time,expected,42,20,2,36,3,1,1,3,4,4,5,6,4,6,4,6,5,5,5,7,7,4,5,5,8,7,6,5
+190,before,Yes,1,No,50,Male,Hispanic,Master's Degree,Retired,before,42,7,29,22,5,2,2,4,4,5,4,4,4,9,6,6,6,5,4,7,7,7,5,2,5,7,5,5
+191,before,Yes,3,No,52,Female,Black,Regular High School Diploma,Part Time,before,9,67,18,6,3,1,2,4,5,4,5,5,3,7,6,7,6,7,4,7,7,6,3,5,6,6,6,5
+192,before,Yes,1,Yes,63,Trans*,Asian,"Some College, 1 or More Years, No Degree",Part Time,before,55,29,7,9,4,1,2,3,4,3,4,5,6,8,8,6,5,7,7,6,7,5,5,8,6,9,8,7
+193,expected,Yes,5,Yes,69,Male,White,Regular High School Diploma,Retired,expected,19,19,33,29,4,3,1,4,6,4,6,4,5,9,5,6,6,7,4,9,4,4,6,8,6,7,6,4
+194,expected,No,5,No,72,Trans*,White,"9th Grade to 12th Grade, No Diploma",Full Time,expected,29,11,42,18,4,3,2,4,3,4,4,4,5,6,7,7,5,5,5,5,8,4,5,5,6,7,6,4
+195,surprise,No,5,No,59,Male,White,Associate's Degree,Part Time,surprise,34,26,20,20,4,2,1,4,3,4,5,4,5,7,6,6,5,5,5,5,6,4,6,4,8,8,6,4
+196,surprise,No,2,Yes,66,Trans*,White,"9th Grade to 12th Grade, No Diploma",Full Time,surprise,5,7,64,24,4,1,2,4,5,4,4,6,6,6,8,6,5,5,5,8,8,6,6,5,5,6,5,4
+197,before,No,7,No,44,Trans*,Asian,"Some College, 1 or More Years, No Degree",Part Time,before,34,33,22,11,3,3,2,4,5,5,4,6,5,7,7,7,5,6,2,6,8,6,5,6,6,7,6,6
+198,before,No,7,No,70,Trans*,Asian,Bachelor's Degree,Full Time,before,57,2,34,7,5,3,2,5,4,5,4,5,5,8,7,7,7,5,4,7,9,3,4,4,5,6,6,5
+199,surprise,Yes,4,No,40,Trans*,White,"Some College, Less than 1 Year",Full Time,surprise,3,74,9,14,5,3,1,3,5,4,4,6,5,8,8,6,6,5,8,5,5,7,4,5,6,7,4,7
+200,surprise,Yes,3,Yes,59,Male,Asian,"Some College, Less than 1 Year",Full Time,surprise,22,36,37,5,4,2,1,3,4,4,3,3,6,7,6,7,5,6,4,5,8,7,6,6,6,8,6,6
+201,surprise,Yes,1,Yes,60,Trans*,White,Regular High School Diploma,Full Time,surprise,40,43,0,17,4,3,1,3,6,4,5,3,5,6,8,8,5,7,5,5,6,6,5,4,8,8,6,5
+202,before,Yes,5,No,43,Male,White,Regular High School Diploma,Student,before,37,22,25,16,3,3,2,4,5,3,4,6,4,8,7,7,5,4,5,5,8,6,4,5,7,8,4,5
+203,before,Yes,2,Yes,36,Female,Hispanic,Regular High School Diploma,Unemployed,before,39,52,8,1,3,2,2,3,5,5,4,6,5,7,8,7,7,5,3,7,5,4,3,6,6,8,4,6
+204,surprise,No,6,No,56,Male,Hispanic,Bachelor's Degree,Full Time,surprise,35,28,32,5,5,2,2,2,5,6,6,6,4,6,8,8,7,5,6,8,6,7,5,6,6,9,6,5
+205,surprise,No,4,Yes,49,Female,White,Bachelor's Degree,Unemployed,surprise,2,23,67,8,5,3,1,3,5,3,6,6,5,8,5,8,4,5,4,6,8,4,3,5,6,9,6,3
+206,expected,No,5,No,59,Female,White,Nursery School to 8th Grade,Full Time,expected,91,4,4,1,3,3,2,4,3,6,4,6,4,7,8,6,6,7,3,5,6,3,5,4,5,7,6,3
+207,surprise,Yes,6,No,66,Trans*,White,"9th Grade to 12th Grade, No Diploma",Student,surprise,26,5,5,64,4,3,1,4,4,4,7,4,4,7,7,7,5,5,5,7,8,4,5,5,5,7,6,5
+208,before,No,6,No,43,Female,White,Bachelor's Degree,Unemployed,before,27,17,51,5,4,1,1,3,5,4,5,5,6,7,3,6,5,5,2,7,8,3,4,6,5,7,5,6
+209,before,No,5,No,37,Male,White,"Some College, 1 or More Years, No Degree",Full Time,before,16,11,21,52,4,2,2,3,4,5,4,5,5,6,6,6,3,6,7,7,5,5,5,5,6,6,6,4
+210,expected,No,5,No,69,Female,White,Master's Degree,Full Time,expected,6,13,38,43,2,2,3,3,5,3,6,6,5,6,7,7,6,5,4,4,6,4,4,4,8,7,5,4
+211,expected,No,5,Yes,37,Male,White,"Some College, Less than 1 Year",Full Time,expected,41,1,6,52,5,1,1,4,4,3,5,5,5,5,7,5,5,5,5,7,8,5,3,5,6,8,5,3
+212,expected,No,6,No,49,Female,White,Regular High School Diploma,Student,expected,36,27,16,21,3,1,1,3,3,5,4,5,6,6,9,8,4,5,5,5,8,6,4,4,5,8,4,5
+213,expected,Yes,3,No,40,Female,White,Regular High School Diploma,Full Time,expected,63,7,0,30,5,2,1,3,4,3,6,7,5,8,7,6,5,5,4,7,5,4,5,5,6,6,6,5
+214,before,Yes,2,No,40,Trans*,White,"Some College, 1 or More Years, No Degree",Full Time,before,17,7,66,10,4,3,1,5,3,4,4,6,3,6,6,8,5,4,5,6,7,8,5,2,7,9,7,5
+215,before,No,7,Yes,54,Male,White,"Some College, 1 or More Years, No Degree",Full Time,before,38,44,14,4,5,4,3,5,4,5,5,5,4,8,7,5,4,8,3,5,6,5,5,3,7,8,4,3
+216,expected,No,5,Yes,38,Trans*,Black,Associate's Degree,Retired,expected,5,13,28,54,4,2,1,4,4,3,6,4,5,7,6,5,6,4,5,7,5,5,5,5,6,6,6,5
+217,surprise,Yes,5,No,72,Trans*,White,"9th Grade to 12th Grade, No Diploma",Full Time,surprise,35,13,20,32,3,1,2,3,4,4,6,3,5,7,6,5,3,7,7,5,5,4,5,6,6,5,7,5
+218,surprise,No,1,Yes,54,Trans*,White,Regular High School Diploma,Full Time,surprise,27,22,31,20,5,1,2,3,4,5,6,6,4,8,7,5,7,7,4,8,6,4,5,4,7,6,6,4
+219,expected,Yes,4,No,68,Female,Bi-Racial,"Some College, 1 or More Years, No Degree",Part Time,expected,20,23,14,43,3,1,1,4,4,4,5,4,6,8,6,8,5,3,5,6,7,8,4,6,4,8,5,5
+220,expected,Yes,4,Yes,53,Trans*,White,Bachelor's Degree,Retired,expected,47,22,23,8,4,1,2,4,5,4,5,5,7,6,7,7,2,6,7,8,8,5,5,4,4,8,6,6
+221,expected,Yes,4,No,52,Female,Hispanic,Bachelor's Degree,Full Time,expected,43,52,1,4,3,3,1,3,5,5,5,6,4,6,6,6,3,9,6,5,7,4,4,4,5,5,7,5
+222,before,No,2,No,72,Trans*,White,"Some College, Less than 1 Year",Full Time,before,34,14,50,2,3,3,2,4,4,6,4,5,5,6,6,7,4,8,4,7,5,6,5,3,7,7,6,5
+223,surprise,Yes,1,No,37,Trans*,White,Regular High School Diploma,Unemployed,surprise,24,51,8,17,4,3,1,4,5,3,5,6,5,6,6,6,6,5,6,6,7,5,6,7,6,8,6,3
+224,surprise,No,4,Yes,35,Male,White,"9th Grade to 12th Grade, No Diploma",Full Time,surprise,58,31,11,0,4,2,1,3,3,4,5,4,3,7,7,8,5,8,4,6,7,4,4,5,6,6,4,3
+225,surprise,No,3,No,45,Male,Hispanic,Regular High School Diploma,Full Time,surprise,22,9,63,6,4,1,3,4,5,6,5,5,5,8,7,8,4,6,4,5,8,5,4,5,8,4,6,6
+226,before,Yes,3,Yes,57,Male,White,"9th Grade to 12th Grade, No Diploma",Full Time,before,42,45,7,6,4,3,1,3,4,4,6,6,6,8,5,9,6,6,5,7,8,6,5,6,6,5,5,4
+227,before,Yes,7,Yes,54,Male,Asian,Nursery School to 8th Grade,Full Time,before,4,36,22,38,4,2,3,2,5,4,3,5,5,8,6,6,5,6,5,8,8,5,5,6,7,9,7,5
+228,surprise,Yes,3,Yes,44,Male,White,Regular High School Diploma,Retired,surprise,29,16,49,6,3,2,1,3,3,4,5,6,5,5,7,6,7,7,6,6,7,4,4,6,7,7,7,5
+229,before,No,5,No,60,Female,Asian,Regular High School Diploma,Full Time,before,25,50,25,0,3,2,1,3,5,3,2,6,5,8,8,7,6,6,5,6,8,5,2,6,6,7,7,5
+230,expected,Yes,5,No,35,Female,White,"9th Grade to 12th Grade, No Diploma",Retired,expected,24,58,2,16,4,3,1,3,4,4,4,4,5,7,5,7,6,7,4,5,6,4,3,5,7,7,6,4
+231,surprise,No,4,Yes,60,Male,White,Bachelor's Degree,Student,surprise,27,24,36,13,4,3,2,3,4,4,5,5,6,7,7,6,5,7,6,6,8,6,2,6,7,6,4,4
+232,before,Yes,3,Yes,39,Male,White,"9th Grade to 12th Grade, No Diploma",Full Time,before,34,23,16,27,4,2,2,4,5,4,3,5,4,7,4,6,3,5,5,6,6,5,4,5,6,6,7,5
+233,expected,No,3,Yes,60,Trans*,White,Regular High School Diploma,Full Time,expected,1,3,83,13,5,2,2,4,4,3,3,5,5,6,7,7,7,6,4,6,7,5,4,4,6,8,5,4
+234,surprise,Yes,1,Yes,67,Male,White,"Some College, 1 or More Years, No Degree",Unemployed,surprise,42,10,42,6,5,2,2,4,4,4,4,3,5,7,4,7,6,4,5,6,8,5,6,5,7,6,5,5
+235,before,Yes,5,No,50,Male,White,"Some College, Less than 1 Year",Full Time,before,21,21,4,54,3,3,1,3,4,5,5,4,6,8,5,5,5,7,6,4,6,6,5,5,6,6,7,3
+236,expected,Yes,3,No,38,Female,White,Bachelor's Degree,Part Time,expected,3,32,58,7,3,3,1,3,5,3,4,5,4,9,8,8,6,8,5,6,7,5,5,6,6,7,5,3
+237,before,No,7,Yes,48,Male,White,Nursery School to 8th Grade,Student,before,18,22,37,23,2,4,1,4,3,3,4,5,4,6,7,5,4,5,3,5,7,4,6,6,5,7,6,4
+238,expected,Yes,1,Yes,65,Trans*,White,Nursery School to 8th Grade,Student,expected,4,47,7,42,4,3,2,4,3,5,6,4,4,8,8,6,3,4,5,4,9,5,5,6,8,8,6,4
+239,expected,Yes,1,No,36,Trans*,White,Associate's Degree,Full Time,expected,9,72,14,5,5,2,1,3,5,4,4,5,5,6,6,6,4,6,4,6,6,6,3,6,3,7,5,7
+240,expected,No,2,No,62,Male,White,Regular High School Diploma,Student,expected,14,9,47,30,4,2,1,2,4,5,6,5,4,9,6,8,6,7,3,8,6,6,3,5,6,6,8,4
+241,before,Yes,5,Yes,46,Trans*,White,Regular High School Diploma,Student,before,20,42,11,27,4,1,2,3,6,6,6,7,5,6,7,7,3,5,4,8,9,5,7,6,7,8,5,7
+242,surprise,Yes,4,No,56,Trans*,Asian,Nursery School to 8th Grade,Retired,surprise,39,4,40,17,5,1,1,3,5,6,4,6,5,7,5,8,4,7,4,5,8,6,5,4,6,7,6,4
+243,expected,No,6,Yes,51,Male,Hispanic,Regular High School Diploma,Full Time,expected,15,33,34,18,4,1,1,3,7,5,5,4,4,7,7,9,5,7,5,7,7,7,5,4,6,8,6,8
+244,expected,No,7,No,43,Female,White,"Some College, Less than 1 Year",Full Time,expected,0,23,55,22,5,2,1,2,5,4,6,7,4,7,6,6,2,6,3,7,9,4,3,7,4,6,6,5
+245,surprise,No,5,Yes,54,Male,White,Regular High School Diploma,Full Time,surprise,4,36,22,38,2,3,1,3,5,6,6,5,7,6,7,7,6,5,7,5,7,7,5,6,5,6,6,5
+246,expected,Yes,7,Yes,68,Female,White,Bachelor's Degree,Unemployed,expected,11,30,18,41,5,1,1,1,5,5,5,7,6,7,6,7,4,6,5,6,6,8,5,5,5,7,7,3
+247,surprise,Yes,1,No,46,Female,White,"Some College, 1 or More Years, No Degree",Retired,surprise,32,61,6,1,5,2,1,3,7,6,6,4,5,7,5,8,5,6,5,6,7,6,8,5,5,7,5,7
+248,expected,No,1,No,68,Male,Asian,Associate's Degree,Full Time,expected,43,24,7,26,4,3,1,3,5,5,4,6,7,5,7,5,6,7,4,6,8,5,6,4,8,7,5,4
+249,expected,No,2,Yes,72,Trans*,White,Bachelor's Degree,Unemployed,expected,27,8,41,24,3,1,1,2,4,5,5,6,4,5,7,7,5,6,5,6,8,6,5,4,5,9,4,5
+250,surprise,No,4,Yes,39,Trans*,Asian,Regular High School Diploma,Full Time,surprise,29,6,48,17,4,1,1,3,5,5,6,5,5,8,5,7,6,7,3,9,6,5,7,6,7,6,6,6
+251,expected,No,4,No,38,Female,Hawaiian,Regular High School Diploma,Retired,expected,48,36,5,11,3,1,1,2,5,7,5,5,5,7,7,7,4,4,7,6,6,6,4,4,6,7,7,4
+252,surprise,Yes,2,No,47,Female,White,Regular High School Diploma,Full Time,surprise,21,13,31,35,4,1,1,4,5,4,5,5,5,7,7,7,5,5,7,6,8,7,3,5,6,9,7,5
+253,before,Yes,3,No,45,Female,White,"Some College, Less than 1 Year",Retired,before,3,52,41,4,5,2,2,4,4,5,6,5,5,7,6,5,4,5,6,7,8,6,8,3,7,7,5,5
+254,expected,Yes,5,No,52,Male,White,Associate's Degree,Full Time,expected,15,16,23,46,4,1,1,3,5,5,6,6,6,8,7,7,4,7,6,6,7,7,6,4,6,7,5,5
+255,before,No,5,Yes,37,Female,Hispanic,Regular High School Diploma,Full Time,before,87,7,6,0,2,1,1,1,5,5,4,6,5,7,6,5,5,8,6,6,7,9,6,5,7,7,7,5
+256,before,Yes,2,No,36,Female,White,"Some College, Less than 1 Year",Retired,before,23,20,29,28,4,1,1,2,6,4,4,7,6,6,7,7,5,5,4,6,6,5,5,5,3,9,7,6
+257,expected,Yes,2,Yes,67,Trans*,White,Bachelor's Degree,Full Time,expected,60,23,2,15,3,1,1,3,6,6,5,6,6,7,5,8,5,5,3,8,8,6,5,6,8,8,6,7
+258,expected,No,1,No,51,Trans*,Black,Bachelor's Degree,Full Time,expected,55,2,25,18,5,1,1,1,7,5,6,5,5,7,5,7,4,7,5,3,9,5,5,4,6,6,3,6
+259,expected,Yes,2,No,56,Trans*,Asian,Nursery School to 8th Grade,Unemployed,expected,76,2,3,19,4,2,1,2,5,5,5,5,7,7,5,6,6,5,5,6,7,5,5,6,6,7,5,6
+260,surprise,Yes,1,No,66,Trans*,White,"9th Grade to 12th Grade, No Diploma",Full Time,surprise,22,22,24,32,5,1,2,3,6,3,5,6,5,6,7,6,5,5,7,6,6,6,7,4,4,7,6,6
+261,surprise,No,2,No,55,Male,White,Bachelor's Degree,Unemployed,surprise,34,27,14,25,4,2,1,1,5,6,4,6,6,8,7,6,7,7,6,8,5,6,6,8,5,6,6,5
+262,surprise,No,2,No,46,Male,Black,Regular High School Diploma,Unemployed,surprise,14,28,46,12,4,1,1,3,5,5,5,4,5,4,5,6,4,4,5,4,8,7,6,6,6,6,7,4
+263,surprise,Yes,4,Yes,66,Trans*,White,"Some College, Less than 1 Year",Student,surprise,70,1,20,9,4,1,2,2,7,6,4,5,6,5,6,7,6,7,5,6,7,5,5,5,5,7,4,8
+264,surprise,Yes,3,No,53,Female,White,Regular High School Diploma,Full Time,surprise,9,24,23,44,3,2,1,3,4,6,6,5,5,5,8,6,5,8,5,4,8,6,7,4,6,8,5,5
+265,surprise,No,6,No,46,Male,White,Regular High School Diploma,Unemployed,surprise,30,17,2,51,3,2,1,3,7,5,6,7,5,6,5,8,3,5,4,7,8,6,5,5,8,7,6,6
+266,expected,Yes,4,Yes,69,Female,White,Regular High School Diploma,Full Time,expected,1,58,27,14,3,1,2,2,6,7,5,5,6,7,7,7,4,5,5,6,5,6,5,5,5,6,6,6
+267,surprise,No,1,No,44,Trans*,Asian,"Some College, 1 or More Years, No Degree",Full Time,surprise,10,51,30,9,4,1,2,2,5,5,5,5,6,4,5,6,4,7,5,7,9,7,5,5,6,8,7,4
+268,expected,Yes,3,No,45,Trans*,White,Master's Degree,Full Time,expected,12,16,15,57,3,2,1,2,6,5,6,6,6,5,7,7,5,3,3,5,7,7,5,5,6,7,6,5
+269,before,Yes,6,Yes,72,Trans*,White,Regular High School Diploma,Full Time,before,6,10,25,59,5,2,1,4,5,5,4,6,5,6,6,6,4,6,5,6,7,7,6,5,6,7,7,6
+270,surprise,Yes,3,Yes,35,Male,White,Regular High School Diploma,Full Time,surprise,54,22,21,3,5,2,2,2,5,5,6,6,6,8,5,6,6,5,3,6,8,5,5,5,6,9,5,6
+271,expected,Yes,4,Yes,71,Female,White,Doctorate Degree,Retired,expected,29,13,19,39,4,1,1,2,6,6,4,6,5,7,7,8,6,5,4,7,6,7,3,8,7,5,6,5
+272,expected,No,7,Yes,42,Male,Hispanic,"9th Grade to 12th Grade, No Diploma",Retired,expected,0,33,30,37,5,2,2,2,6,4,6,5,5,6,7,8,7,6,5,6,7,7,6,4,5,6,8,6
+273,expected,No,4,No,46,Trans*,White,Regular High School Diploma,Student,expected,33,25,23,19,4,2,1,3,3,5,4,4,6,5,7,8,6,5,5,5,7,6,8,5,6,7,7,6
+274,expected,Yes,7,No,36,Female,Hispanic,Associate's Degree,Full Time,expected,8,68,12,12,4,2,1,2,4,6,6,4,5,7,7,7,5,6,6,6,8,5,5,5,5,7,7,4
+275,before,No,3,Yes,50,Female,Black,Associate's Degree,Student,before,5,18,58,19,4,2,3,2,5,5,5,6,4,4,7,7,4,8,6,7,8,6,6,3,5,6,6,5
+276,expected,Yes,3,Yes,54,Trans*,White,"Some College, 1 or More Years, No Degree",Unemployed,expected,7,39,10,44,5,1,1,1,6,5,6,6,6,7,7,8,4,5,6,8,8,7,4,5,6,9,5,5
+277,surprise,No,6,No,42,Trans*,Black,"Some College, Less than 1 Year",Retired,surprise,1,20,42,37,4,1,1,4,4,6,5,6,6,6,6,7,5,6,7,5,7,5,4,4,7,7,8,6
+278,before,Yes,6,Yes,58,Female,White,Master's Degree,Full Time,before,30,6,64,0,5,1,1,2,6,6,6,5,6,7,6,8,3,4,7,7,6,5,5,4,8,8,5,5
+279,before,No,3,No,50,Trans*,White,Regular High School Diploma,Full Time,before,38,32,19,11,5,2,2,2,4,5,7,5,6,6,7,7,5,5,5,5,7,6,6,7,5,9,5,4
+280,surprise,Yes,5,Yes,55,Trans*,White,Bachelor's Degree,Unemployed,surprise,24,3,14,59,5,1,1,1,6,5,5,5,5,8,8,5,4,6,7,5,8,5,4,6,5,8,6,7
+281,expected,No,6,Yes,55,Male,White,Bachelor's Degree,Retired,expected,17,75,8,0,3,1,1,3,5,7,5,6,4,5,7,8,4,6,6,6,9,7,7,7,5,7,7,8
+282,surprise,Yes,6,No,64,Female,Black,Regular High School Diploma,Full Time,surprise,1,36,30,33,5,3,1,3,5,5,6,6,6,7,5,5,3,5,6,7,8,5,6,4,6,7,6,4
+283,surprise,Yes,1,No,36,Male,Bi-Racial,Associate's Degree,Part Time,surprise,19,23,24,34,3,1,1,3,5,6,6,6,6,8,5,8,5,6,7,6,7,2,7,2,7,9,7,6
+284,expected,Yes,6,Yes,40,Male,White,Bachelor's Degree,Retired,expected,19,74,3,4,5,4,2,4,4,6,5,6,6,6,7,7,6,7,5,5,7,4,5,4,8,8,9,6
+285,before,Yes,6,No,72,Male,White,Professional School Degree,Full Time,before,80,8,1,11,3,1,1,3,5,6,5,6,5,7,7,6,5,5,4,5,7,6,7,7,6,9,7,7
+286,surprise,No,4,No,63,Male,Black,Professional School Degree,Full Time,surprise,86,3,3,8,5,1,1,3,4,6,6,5,6,5,6,6,5,8,5,5,5,8,6,5,6,7,8,3
+287,expected,Yes,4,Yes,55,Female,White,Bachelor's Degree,Full Time,expected,11,26,44,19,4,2,1,3,6,6,6,4,5,6,6,5,6,7,4,5,5,6,6,3,7,7,7,6
+288,surprise,Yes,3,Yes,64,Trans*,White,Master's Degree,Student,surprise,15,38,25,22,4,1,1,3,6,6,5,5,4,5,6,7,4,6,4,7,8,5,5,4,7,9,7,3
+289,expected,Yes,7,Yes,68,Trans*,Hispanic,Regular High School Diploma,Unemployed,expected,3,12,55,30,4,1,1,3,5,6,6,6,6,7,7,8,8,5,5,7,7,7,7,3,7,6,5,5
+290,surprise,Yes,6,No,58,Female,Hispanic,Regular High School Diploma,Full Time,surprise,6,7,69,18,3,1,1,3,7,5,5,4,6,6,8,6,5,4,6,7,8,6,7,6,6,6,4,6
+291,expected,Yes,3,Yes,50,Trans*,Hispanic,Regular High School Diploma,Full Time,expected,82,5,5,8,5,1,2,2,6,7,6,5,6,5,7,9,5,6,6,6,7,5,7,4,5,6,6,4
+292,surprise,Yes,7,No,51,Trans*,White,Master's Degree,Full Time,surprise,2,36,19,43,5,1,1,3,4,5,6,7,5,9,8,6,4,5,3,7,4,7,5,5,8,8,6,5
+293,before,Yes,5,Yes,61,Male,White,Bachelor's Degree,Full Time,before,28,22,44,6,4,1,1,2,5,6,5,6,5,6,6,6,5,4,2,7,6,5,4,5,7,7,6,5
+294,expected,Yes,4,Yes,36,Male,White,Professional School Degree,Retired,expected,27,66,4,3,4,1,1,3,5,5,6,6,6,7,7,8,4,7,6,6,7,6,3,4,7,8,5,7
+295,expected,Yes,6,No,58,Trans*,White,"9th Grade to 12th Grade, No Diploma",Full Time,expected,25,16,21,38,5,1,1,2,6,5,5,7,6,7,5,8,4,7,5,8,8,6,5,6,5,7,4,7
+296,before,No,7,Yes,53,Trans*,Black,Regular High School Diploma,Full Time,before,7,29,7,57,4,1,1,2,5,6,6,7,6,7,7,5,5,6,7,5,6,2,6,7,8,6,5,4
+297,surprise,Yes,3,Yes,46,Trans*,Hispanic,"9th Grade to 12th Grade, No Diploma",Full Time,surprise,49,3,24,24,4,1,1,2,5,6,6,6,4,6,7,7,5,6,5,6,8,6,5,4,8,8,4,6
+298,expected,Yes,7,Yes,68,Trans*,White,Bachelor's Degree,Full Time,expected,16,2,16,66,4,3,1,2,4,6,6,6,5,5,7,7,5,7,3,7,4,5,6,3,7,9,6,4
+299,surprise,Yes,4,Yes,69,Female,White,"9th Grade to 12th Grade, No Diploma",Student,surprise,8,10,1,81,4,2,1,1,6,6,7,6,6,7,5,6,3,7,4,7,8,5,5,5,8,8,6,5
+300,before,No,7,No,37,Female,White,Regular High School Diploma,Full Time,before,12,19,49,20,4,1,3,1,4,6,5,5,5,6,3,5,3,8,5,7,6,5,5,7,6,6,6,5
+301,before,Yes,3,No,38,Male,Asian,Associate's Degree,Full Time,before,3,35,19,43,4,1,1,1,5,6,6,6,7,6,8,7,6,6,4,6,7,5,7,3,7,7,5,5
+302,before,Yes,5,Yes,50,Trans*,Black,Regular High School Diploma,Full Time,before,72,6,11,11,4,1,1,2,6,6,5,6,6,7,6,7,3,7,5,6,8,7,7,4,7,5,6,6
+303,before,No,6,No,45,Trans*,Hispanic,Regular High School Diploma,Full Time,before,33,12,51,4,2,3,1,3,6,6,6,6,6,7,5,8,6,9,5,7,7,5,5,6,7,8,6,7
+304,surprise,No,2,No,48,Male,White,Regular High School Diploma,Full Time,surprise,0,35,4,61,4,1,2,2,5,4,4,6,3,7,6,8,5,2,7,6,6,6,4,5,6,9,6,5
+305,expected,No,4,Yes,64,Trans*,White,"Some College, 1 or More Years, No Degree",Retired,expected,49,1,49,1,5,1,1,3,6,6,5,5,5,8,7,5,5,7,4,6,7,5,5,3,3,8,5,7
+306,expected,Yes,7,Yes,50,Female,White,Bachelor's Degree,Full Time,expected,55,12,4,29,4,1,1,2,6,6,6,5,7,5,5,6,5,7,6,7,7,6,6,4,5,8,6,6
+307,surprise,No,1,No,47,Male,Hispanic,Regular High School Diploma,Unemployed,surprise,17,39,27,17,3,2,2,3,5,5,6,6,5,8,7,7,4,4,7,8,7,7,6,5,6,7,5,8
+308,expected,Yes,6,No,70,Trans*,White,Master's Degree,Full Time,expected,8,45,7,40,5,1,2,4,4,7,4,6,5,9,6,6,5,5,5,4,7,7,6,4,5,7,7,5
+309,expected,Yes,7,Yes,63,Trans*,Black,Regular High School Diploma,Part Time,expected,41,39,17,3,5,2,1,2,6,5,6,5,5,8,6,6,7,4,6,5,7,7,6,5,7,7,5,3
+310,surprise,No,1,Yes,61,Male,Native,Bachelor's Degree,Student,surprise,3,55,21,21,4,1,1,4,5,4,6,5,5,4,8,7,4,5,5,6,7,5,5,3,6,7,6,6
+311,expected,Yes,4,No,49,Female,Black,Regular High School Diploma,Student,expected,1,2,67,30,4,1,1,3,5,4,5,6,5,5,7,7,5,7,7,5,7,6,5,7,6,9,5,5
+312,before,Yes,1,No,49,Male,Black,Regular High School Diploma,Full Time,before,6,10,51,33,4,1,2,1,6,5,4,5,6,6,4,8,4,6,3,4,7,7,5,4,6,6,6,4
+313,expected,No,7,No,69,Male,White,"Some College, Less than 1 Year",Full Time,expected,47,25,3,25,4,2,2,1,5,5,6,6,6,7,8,7,5,6,4,6,7,4,6,5,7,5,6,5
+314,before,Yes,1,Yes,37,Female,Hispanic,"Some College, Less than 1 Year",Part Time,before,12,43,12,33,4,2,2,1,5,5,6,7,5,6,6,4,4,6,4,6,5,9,5,4,5,6,6,6
+315,before,Yes,2,Yes,58,Male,White,Associate's Degree,Full Time,before,3,57,34,6,4,1,1,1,5,5,5,5,7,5,8,5,6,5,5,6,6,6,5,5,6,8,7,4
+316,expected,No,5,Yes,59,Female,White,Bachelor's Degree,Unemployed,expected,31,40,4,25,4,1,2,2,6,5,5,6,7,6,4,7,5,7,6,6,6,6,6,6,8,7,4,4
+317,surprise,Yes,4,No,45,Trans*,White,Regular High School Diploma,Full Time,surprise,1,43,47,9,5,1,1,3,4,6,6,5,5,6,7,9,7,7,5,6,8,6,5,5,5,7,5,4
+318,before,No,3,No,50,Female,White,Associate's Degree,Full Time,before,46,47,6,1,5,1,1,2,4,5,4,6,6,8,6,7,3,7,5,6,7,6,5,4,7,7,5,5
+319,expected,Yes,6,No,44,Trans*,White,"Some College, 1 or More Years, No Degree",Part Time,expected,63,3,33,1,5,2,1,3,5,7,5,6,5,5,5,8,5,8,4,7,5,6,7,4,7,8,4,5
+320,surprise,Yes,2,Yes,58,Male,Hispanic,Professional School Degree,Full Time,surprise,41,0,35,24,5,1,1,3,6,5,6,7,5,7,4,6,5,6,4,4,8,5,6,5,5,7,8,5
+321,surprise,No,4,Yes,46,Trans*,Black,Regular High School Diploma,Full Time,surprise,29,1,21,49,5,2,2,3,5,5,6,6,6,6,6,7,4,8,5,7,8,6,3,5,6,9,6,5
+322,expected,Yes,5,No,67,Female,White,Master's Degree,Full Time,expected,9,69,3,19,3,1,1,2,6,6,6,5,7,7,6,7,5,6,5,6,8,6,7,6,6,6,5,5
+323,before,Yes,2,No,60,Female,Bi-Racial,Regular High School Diploma,Full Time,before,49,20,12,19,5,1,2,3,6,3,3,5,6,7,7,7,5,6,6,5,8,7,7,7,5,7,8,5
+324,expected,Yes,3,No,51,Trans*,Bi-Racial,"Some College, 1 or More Years, No Degree",Full Time,expected,50,27,13,10,4,2,1,2,5,4,6,4,6,5,7,7,4,6,4,5,8,5,3,6,7,9,5,4
+325,expected,Yes,3,No,35,Female,Asian,Nursery School to 8th Grade,Unemployed,expected,72,12,12,4,5,1,1,2,5,5,5,6,5,7,5,8,7,7,5,7,8,6,5,4,4,8,6,6
+326,surprise,Yes,4,Yes,55,Male,Black,"9th Grade to 12th Grade, No Diploma",Full Time,surprise,8,15,49,28,4,1,1,3,5,6,6,5,6,7,4,7,6,6,5,6,8,5,8,5,7,7,5,6
+327,before,No,3,No,55,Male,Hispanic,"Some College, 1 or More Years, No Degree",Part Time,before,39,23,24,14,4,2,1,3,5,5,6,6,4,6,7,6,2,5,6,8,7,6,7,7,6,8,5,5
+328,expected,No,4,Yes,44,Male,White,Regular High School Diploma,Full Time,expected,1,3,95,1,4,1,1,3,4,5,5,6,7,6,6,5,5,6,6,7,7,5,5,4,6,7,4,8
+329,surprise,No,2,No,45,Male,Black,Bachelor's Degree,Full Time,surprise,0,85,8,7,2,1,1,3,5,5,7,5,6,6,6,8,5,7,6,5,7,6,5,7,6,9,7,7
+330,surprise,Yes,5,No,61,Male,White,"Some College, 1 or More Years, No Degree",Full Time,surprise,40,2,8,50,5,2,2,3,6,5,6,6,5,6,5,5,5,5,6,6,9,5,4,6,7,7,6,6
+331,before,No,3,No,50,Female,White,"Some College, Less than 1 Year",Full Time,before,20,51,9,20,5,3,1,4,5,5,5,6,5,6,8,8,4,3,4,8,9,6,4,4,7,7,6,4
+332,expected,No,3,Yes,40,Trans*,White,No Schooling Completed,Full Time,expected,79,5,7,9,4,1,3,2,4,3,6,4,6,7,6,5,5,8,5,8,8,5,3,6,5,7,7,7
+333,surprise,Yes,5,Yes,45,Male,White,"Some College, 1 or More Years, No Degree",Full Time,surprise,41,18,19,22,4,1,1,1,6,4,7,3,7,9,7,8,5,6,5,7,8,8,6,5,6,6,7,6
+334,surprise,Yes,6,Yes,60,Female,White,"9th Grade to 12th Grade, No Diploma",Full Time,surprise,9,43,14,34,4,1,1,2,5,6,5,5,5,6,7,8,5,6,4,7,8,5,3,4,7,8,6,6
+335,expected,Yes,6,No,35,Trans*,Black,Regular High School Diploma,Full Time,expected,11,55,15,19,4,1,1,2,6,5,4,6,6,9,5,6,5,4,5,5,6,4,6,6,7,7,5,5
+336,before,Yes,4,No,69,Male,White,Master's Degree,Student,before,3,11,13,73,4,1,1,3,6,6,4,6,6,7,5,5,5,8,6,8,7,7,6,7,5,8,5,5
+337,expected,No,6,No,35,Male,Black,Regular High School Diploma,Full Time,expected,34,16,6,44,4,1,1,1,4,4,6,5,5,6,7,7,4,7,7,6,7,6,4,4,8,7,7,5
+338,surprise,Yes,2,No,52,Female,Asian,GED or Alternative Credential,Full Time,surprise,26,21,1,52,4,1,2,2,5,4,5,6,6,7,6,8,6,6,6,4,7,6,5,4,5,6,6,8
+339,expected,No,3,Yes,43,Trans*,White,"Some College, Less than 1 Year",Student,expected,2,6,73,19,4,2,1,3,5,6,6,5,6,7,9,7,2,5,5,7,5,6,8,5,6,6,6,6
+340,before,Yes,1,Yes,46,Male,White,"Some College, Less than 1 Year",Full Time,before,4,10,29,57,5,1,1,4,5,6,6,6,5,6,8,9,3,7,6,6,6,5,3,6,6,7,7,6
+341,before,No,3,No,39,Trans*,Hispanic,"9th Grade to 12th Grade, No Diploma",Full Time,before,36,17,38,9,5,1,1,3,6,6,6,5,7,7,6,6,4,4,7,4,7,7,6,6,6,8,7,7
+342,before,Yes,1,No,43,Trans*,Asian,Master's Degree,Full Time,before,46,9,8,37,4,2,1,3,4,6,5,6,6,6,7,4,5,9,5,8,6,7,6,4,5,7,5,5
+343,before,Yes,1,No,69,Male,White,Bachelor's Degree,Student,before,23,17,5,55,5,1,1,3,6,6,7,5,6,6,7,8,5,5,6,5,7,4,7,7,6,9,6,7
+344,before,Yes,2,Yes,54,Female,White,Nursery School to 8th Grade,Full Time,before,1,4,83,12,5,1,2,3,5,6,5,6,5,9,5,7,5,5,6,7,8,7,7,4,8,6,7,4
+345,surprise,No,3,No,46,Female,Black,Bachelor's Degree,Retired,surprise,39,13,42,6,4,1,2,1,5,4,6,5,6,6,7,8,3,8,4,5,9,7,6,5,5,7,5,6
+346,expected,Yes,3,No,41,Trans*,Hispanic,Associate's Degree,Full Time,expected,4,52,2,42,3,2,2,2,5,5,4,4,5,6,7,7,4,8,6,7,7,6,6,5,5,7,5,6
+347,surprise,Yes,3,No,59,Male,White,Bachelor's Degree,Full Time,surprise,0,35,63,2,4,1,1,1,4,6,3,6,6,6,5,6,6,4,6,7,6,7,5,4,5,8,7,5
+348,expected,Yes,2,No,48,Male,White,Bachelor's Degree,Part Time,expected,47,17,29,7,3,1,1,2,6,6,7,7,6,7,8,8,6,6,6,5,7,7,4,4,5,6,6,4
+349,expected,Yes,4,No,56,Female,White,"Some College, Less than 1 Year",Full Time,expected,19,19,42,20,4,2,1,3,6,6,5,6,6,8,8,5,3,5,6,7,6,8,5,5,7,7,5,6
+350,before,No,1,No,61,Female,White,Bachelor's Degree,Full Time,before,3,21,0,76,4,1,1,2,6,6,5,5,5,6,7,7,6,4,5,3,8,6,5,5,6,7,6,4
+351,expected,No,5,No,47,Trans*,White,Bachelor's Degree,Full Time,expected,5,6,50,39,3,1,1,3,4,7,4,5,6,9,7,6,6,5,6,7,6,6,6,5,8,6,6,5
+352,expected,No,1,No,47,Male,Black,Bachelor's Degree,Student,expected,1,6,84,9,5,2,3,4,5,7,5,5,5,7,6,7,4,4,6,7,6,7,3,5,6,8,5,5
+353,expected,Yes,4,No,66,Female,White,Bachelor's Degree,Full Time,expected,7,55,12,26,5,1,1,2,6,5,4,7,6,7,7,6,5,6,5,6,6,4,4,7,6,6,5,3
+354,expected,Yes,6,Yes,45,Male,White,Regular High School Diploma,Unemployed,expected,34,20,4,42,4,1,1,2,5,6,6,5,5,7,6,6,4,8,5,5,7,6,6,4,5,8,5,3
+355,expected,No,1,Yes,64,Male,White,Regular High School Diploma,Full Time,expected,31,4,62,3,3,2,2,2,5,5,6,5,7,7,6,9,7,5,5,7,7,7,7,6,5,9,7,5
+356,surprise,Yes,6,No,42,Female,White,"9th Grade to 12th Grade, No Diploma",Full Time,surprise,24,31,43,2,4,1,1,1,5,5,5,5,6,6,7,8,4,4,5,5,8,6,7,6,7,8,6,5
+357,surprise,No,3,Yes,71,Trans*,Black,Regular High School Diploma,Part Time,surprise,15,55,5,25,4,1,1,2,4,6,6,6,6,5,7,6,5,7,5,5,5,7,6,6,6,8,6,5
+358,before,No,6,No,50,Male,White,"Some College, 1 or More Years, No Degree",Student,before,6,53,40,1,4,1,1,3,3,5,4,6,5,4,6,7,4,5,4,4,8,7,5,4,6,7,5,4
+359,surprise,No,3,No,49,Male,White,Regular High School Diploma,Full Time,surprise,37,15,28,20,4,1,1,2,6,4,6,4,5,6,7,9,5,8,5,6,7,4,6,4,9,8,7,5
+360,surprise,No,4,No,42,Trans*,White,"Some College, 1 or More Years, No Degree",Full Time,surprise,37,9,51,3,2,1,1,2,5,6,6,6,6,8,6,6,4,8,7,5,7,6,7,5,6,7,6,7
