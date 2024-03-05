@@ -48,5 +48,8 @@
 #'   \item{\code{decisioneval}}{double COLUMN_DESCRIPTION}
 #'   \item{\code{relevance}}{double COLUMN_DESCRIPTION}
 #'}
+#'
+#'#' @import tidyr
+#'
 #' @source \url{Simulated data from MERP}
 "hindsight"
