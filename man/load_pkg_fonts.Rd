@@ -6,13 +6,17 @@
 \usage{
 load_pkg_fonts(verbose = TRUE)
 }
+\arguments{
+\item{verbose}{Whether the newly registered fonts should be printed to the console. Defaults to \code{TRUE}.}
+}
 \description{
 Registers fonts contained in {emwthemes} with \code{systemfonts::register_font()}. This function is called when the package is loaded.
 }
 \details{
 All styles of a font family are registered as the Regular member of their own families in the form of "{family}-{style(s)}".
 
-Call \code{systemfonts::registry_fonts()} after loading the fonts for more details
+Call \code{systemfonts::registry_fonts()} after loading the fonts for list of fonts loaded.
+Note also that displaying the font in \code{ggplot2} objects in rmd or quarto requires \code{showtext::showtext_auto()} in the code chunk. If saving with ``ggsave\code{run}showtext_opts(dpi = 300)`
 }
 \section{Fonts loaded}{
 

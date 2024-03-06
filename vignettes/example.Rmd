@@ -7,11 +7,13 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r setup, include = FALSE}
+```{r, messages=FALSE, warning=FALSE, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.width=8, fig.height=5
+  fig.path = "man/figures/EXAMPLE-",
+  out.width = "60%",
+  fig.align = "center"
 )
 
 ```
@@ -29,11 +31,31 @@ library(tidyr)
 library(glue)
 library(ggtext)
 library(systemfonts)
+library(showtext)
 
-ggplot(NULL, aes(0, 0)) +
-  geom_text(aes(label = "cat"), size = 50, family = "Font Awesome 6 Free Solid")
+showtext::showtext_auto()
+
+tib <- tibble(
+  family = c('Monolisaemw', 'Metropolis', 'Oswald'),
+  x = 0,
+  y = seq(0.0, 1, length.out = 3),
+  label = "Let's talk cash <span style='font-family:fa-solid'>&#xf651;</span>"
+)
+
+
+tib |> 
+  ggplot(aes(x, y, label = label)) +
+  geom_richtext(family = tib$family, size = 6, hjust = 0, col = 'dodgerblue4', label.colour = NA) +
+  coord_cartesian(xlim = c(0, 1), ylim = c(-0.1, 1.1)) +
+  theme_void()
+
+
 
 ```
+
+
+```{r example-plot, messages=FALSE, warning=FALSE, eval=FALSE}
+
 # Call the function to update the geom_default fonts
 update_geom_fonts_emw()
 

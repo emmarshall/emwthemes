@@ -4,7 +4,10 @@
 #'
 #' All styles of a font family are registered as the Regular member of their own families in the form of "{family}-{style(s)}".
 #'
-#' Call \code{systemfonts::registry_fonts()} after loading the fonts for more details
+#' Call \code{systemfonts::registry_fonts()} after loading the fonts for list of fonts loaded.
+#'Note also that displaying the font in `ggplot2` objects in rmd or quarto requires `showtext::showtext_auto()` in the code chunk. If saving with ``ggsave` run `showtext_opts(dpi = 300)`
+#'
+#' @param verbose Whether the newly registered fonts should be printed to the console. Defaults to \code{TRUE}.
 #'
 #' @section Fonts loaded:
 #' \describe{
@@ -23,13 +26,13 @@
 load_pkg_fonts <- function(verbose = TRUE) {
   custom_names <- c(
     "MonoLisaemw" = "MonoLisaemw",
-    "Font-Awesome-6-Brands-Regular-400" = "FontAwesome6-Brands",
+    "Font-Awesome-6-Brands-Regular-400" = "fa-brands",
     "Font-Awesome-6-Free-Regular-400" = "FontAwesome6-Regular",
     "Font-Awesome-6-Free-Solid-900" = "FontAwesome6-Solid"
   )
 
   .load_pkg_font <- function(family) {
-    font_dir <- system.file("fonts", family, package = "penngradlings")
+    font_dir <- system.file("fonts", family, package = "emwthemes")
     font_paths <- dir(font_dir, full.names = TRUE)
     font_names <- stringr::str_remove(dir(font_dir), "\\..*$")
 
@@ -80,78 +83,6 @@ load_pkg_fonts <- function(verbose = TRUE) {
 }
 
 
-
-#' Get information about a font
-#'
-#' @param family Font family.
-#' @param style Font style. Defaults to \code{"Regular"}.
-#'
-#' @return A dataframe containing information about a font.
-#'   The \code{"source"} attribute indicates where it was found.
-#'   If the font doesn't exist, invisibly returns \code{NULL}.
-#' @export
-font_info <- function(family, style = "Regular") {
-  sys_font <- systemfonts::system_fonts() |>
-    dplyr::filter(
-      .data$family == .env$family,
-      .data$style == .env$style
-    )
-  reg_font <- systemfonts::registry_fonts() |>
-    dplyr::filter(
-      .data$family == .env$family,
-      .data$style == .env$style
-    )
-  if (nrow(sys_font) == 0) {
-    if (nrow(reg_font) == 0) {
-      cli::cli_text("Font {.val {family}} does not exist!")
-      invisible(NULL)
-    } else {
-      attr(reg_font, "source") <- "registry"
-      reg_font
-    }
-  } else {
-    attr(sys_font, "source") <- "system"
-    sys_font
-  }
-}
-
-#' Check whether a font is registered
-#'
-#' Wrapper around \code{emwthemes::font_info} that tests whether the output is \code{NULL}.
-#'
-#' @param family Font family.
-#' @param style Font style. Defaults to \code{"Regular"}.
-#'
-#' @return Boolean
-#' @export
-#'
-#' @examples
-#' \dontrun{
-#' font_exists(family = "Oswald")
-#' }
-font_exists <- function(family, style = "Regular") {
-  !is.null(suppressMessages(font_info(family, style)))
-}
-
-#' Find path to a system font
-#'
-#' Wrapper around \code{emwthemes::font_info} that pulls the path of the font if it exists.
-#'
-#' @param family Font family.
-#' @param style Font style. Defaults to \code{"Regular"}.
-#'   If the font doesn't exist, invisibly returns \code{NULL}.
-#'
-#' @return String of the path to the font file.
-#' @export
-font_path <- function(family, style = "Regular") {
-  font_info <- suppressMessages(font_info(family, style))
-  if (!is.null(font_info)) {
-    font_info$path
-  } else {
-    cli::cli_text("Font {.val {family}} does not exist!")
-    invisible(NA)
-  }
-}
 
 #' Register members of a font family as their own families
 #'
