@@ -26,5 +26,5 @@ Plotting with emwCols palettes for color ggplot2
 library(ggplot2)
 ggplot(data=mtcars, aes(x=mpg, y=disp, fill=wt)) +
   geom_point(pch = 21) +
-  scale_fill_emw_c("Greens")
+  scale_fill_emw_c("Corals")
 }

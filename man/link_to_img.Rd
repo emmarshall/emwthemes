@@ -2,7 +2,7 @@
 % Please edit documentation in R/add_img.R
 \name{link_to_img}
 \alias{link_to_img}
-\title{Create an HTML image tag with a specified width taken from Thomas Mock blog post}
+\title{Create an HTML image tag with a specified width taken from Thomas Mock blog post for use with \code{ggimage()}}
 \usage{
 link_to_img(x, width)
 }
@@ -15,5 +15,5 @@ link_to_img(x, width)
 An HTML image tag.
 }
 \description{
-Create an HTML image tag with a specified width taken from Thomas Mock blog post
+Create an HTML image tag with a specified width taken from Thomas Mock blog post for use with \code{ggimage()}
 }

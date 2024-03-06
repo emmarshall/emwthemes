@@ -18,50 +18,50 @@ knitr::opts_chunk$set(
 
 ## Examples
 
-```{r example-plot, messages=FALSE, warning=FALSE, eval=FALSE}
+```{r example-icon, messages=FALSE, warning=FALSE, eval=TRUE}
 
 library(emwthemes)
 library(ggplot2)
-library(extrafont)
 library(survivoR)
 library(stringr)
 library(dplyr)
 library(tidyr)
-loadfonts(quiet = TRUE)
+library(glue)
+library(ggtext)
+library(systemfonts)
 
+ggplot(NULL, aes(0, 0)) +
+  geom_text(aes(label = "cat"), size = 50, family = "Font Awesome 6 Free Solid")
+
+```
 # Call the function to update the geom_default fonts
 update_geom_fonts_emw()
+
 # Create line chart 
-season_summary |> 
+df <- season_summary |> 
   filter(version == "US",
-         season < 41) |> 
-  select(season, viewers_premiere, viewers_finale)  |> 
-  pivot_longer(cols = -season, names_to = "episode", values_to = "viewers") |> 
-  mutate(
-    episode = str_to_title(str_replace(episode, "viewers_", ""))
-  ) |> 
-  ggplot(aes(x = season, y = viewers, colour = episode)) +
-  geom_line() +
-  geom_point(size = 1.5) +
-   #add text labels
-  geom_curve(aes(x = 8, y = 61, xend = 1.2, yend = 53), size = 0.5,  ## arrow
-             arrow = arrow(length = unit(0.2, "inches"), type = "closed", ends = "last"), 
-             curvature = 0.2,
-             color = "#ff6361") +
-  geom_curve(aes(x = 35.5, y = 24.5, xend = 40, yend = 10), size = 0.5,  ## arrow
-             arrow = arrow(length = unit(0.2, "inches"), type = "closed", ends = "last"), 
-             curvature = -0.3,
-             color = "#ff6361") +
-  geom_text(aes(x = 18.5, y = 62, label = "Season 1: Borneo finale viewers")) +
-  geom_text(aes(x = 24, y = 26.5, label = "Season 40: Winner's at War finale viewers")) +
+         season < 10) |> 
+  select(season, n_cast)
+
+person <- "<span style='font-family:fa-solid'>&#xf183;</span>"
+txt <- "grey20"
+# 📊 plot --------------------------------------------------------------------
+
+df |> 
+  ggplot() +
+
+  geom_richtext(aes(n_cast, -season, label = person, color = season), label.colour = NA, fill = NA) +
+  geom_text(aes(0, -season, label = season), family = 'Oswald', color = txt, size = 16) +
+  geom_text(aes(n_cast, 0, label = n_cast), family = 'Oswald', color = txt, size = 16) +
+  annotate("text", x = 1, y = 1, label = "Sauce number", family = 'Oswald', color = txt, size = 16, hjust = 0) +
+  #scale_color_emw_c("Corals") +
+ #scale_fill_emw_c("Corals") +
   labs(
-    title = "Survivor viewers over the 40 seasons",
-    subtitle = "Decline in viewership over the years",
-    x = "Season",
-    y = "Viewers (Millions)",
-    colour = "Episode"
-  ) +
-  theme_emw()
+    title = "HOT ONES!",
+    colour = "Scoville units"
+    ) +
+  coord_cartesian(clip = "off") +
+  theme_unl_dark()
  
 
 #ggsave("line-viewers.png", device = "png", type = "cairo", width = 8, height = 5, dpi = 300)

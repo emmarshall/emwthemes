@@ -16,18 +16,18 @@ Imports:
     ggtext,
     scales,
     glue,
-    extrafont,
     ggrepel,
     magick,
+    systemfonts,
+    rlang,
+    cli,
     purrr
 Suggests: 
     knitr,
     rmarkdown,
     spelling,
-    testthat (>= 3.0.0),
-    dplyr,
     tidyr,
-    stringr,
+    dpylr,
     survivoR
 Language: en-US
 VignetteBuilder: knitr

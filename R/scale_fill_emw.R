@@ -9,7 +9,7 @@
 #' library(ggplot2)
 #' ggplot(data=mtcars, aes(x=mpg, y=disp, fill=wt)) +
 #'   geom_point(pch = 21) +
-#'   scale_fill_emw_c("Greens")
+#'   scale_fill_emw_c("Corals")
 #' @export
 
 scale_fill_emw_c <- function(name,
@@ -38,7 +38,7 @@ scale_fill_emw_c <- function(name,
 
 }
 
-#' Plotting with emwCols palettes for colour ggplot2
+#' Plotting with emwCols palettes for color ggplot2
 #' @param name Name of Palette. Run \code{names(emwColsPalettes)} to view options.
 #' @param direction Sets order of colors. Default palette is 1. If direction is -1,
 #' palette color order is reversed
@@ -90,19 +90,19 @@ scale_fill_emw_d <- function(name,
 
 }
 
-#' Plotting with emwCols palettes for fill colour ggplot2
+#' Plotting with emwCols palettes for fill color ggplot2
 #' @param name Name of Palette. Run \code{view_all_palettes(type = "div")} to view
 #' options. Must be a diverging palette name.
 #' @param direction Sets order of colors. Default palette is 1. If direction is -1,
 #' palette color order is reversed
 #' @param legend_title Character string specifying legend title. Default `NULL`.
-#' @param ... Other arguments passed on to \code{\link[ggplot2]{scale_colour_gradient2}}
-#' @return A ggproto object defining a continuous colour scale for use with ggplot2.
+#' @param ... Other arguments passed on to \code{\link[ggplot2]{scale_color_gradient2}}
+#' @return A ggproto object defining a continuous color scale for use with ggplot2.
 #' @examples
 #' library(ggplot2)
 #' ggplot(data=mtcars, aes(x=mpg, y=disp, fill=wt)) +
 #'   geom_point(pch = 21) +
-#'   scale_fill_emw_div("PurpleYellows", midpoint = mean(mtcars$wt))
+#'   scale_fill_emw_div("Coral2Blues", midpoint = mean(mtcars$wt))
 #' @export
 
 scale_fill_emw_div <- function(name,

@@ -15,17 +15,17 @@ palette color order is reversed}
 
 \item{legend_title}{Character string specifying legend title. Default \code{NULL}.}
 
-\item{...}{Other arguments passed on to \code{\link[ggplot2]{scale_colour_gradient2}}}
+\item{...}{Other arguments passed on to \code{\link[ggplot2]{scale_color_gradient2}}}
 }
 \value{
-A ggproto object defining a continuous colour scale for use with ggplot2.
+A ggproto object defining a continuous diverging color scale for use with ggplot2.
 }
 \description{
 Plotting with personal palettes for color ggplot2
 }
 \examples{
 library(ggplot2)
-ggplot(data=mtcars, aes(x=mpg, y=disp, colour=wt)) +
+ggplot(data=mtcars, aes(x=mpg, y=disp, color=wt)) +
   geom_point() +
-  scale_color_emw_div("PinkGreens", midpoint = mean(mtcars$wt))
+  scale_color_emw_div("Coral2Blues", midpoint = mean(mtcars$wt))
 }

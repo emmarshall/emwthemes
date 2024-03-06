@@ -1,4 +1,4 @@
-#' Create an HTML image tag with a specified width taken from Thomas Mock blog post
+#' Create an HTML image tag with a specified width taken from Thomas Mock blog post for use with `ggimage()`
 #'
 #' @param x The image source URL.
 #' @param width The width of the image in pixels.

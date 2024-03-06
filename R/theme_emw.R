@@ -1,7 +1,7 @@
 
 #' Custom ggplot2 theme for Personal use
 #'
-#' @param base_family Base font family (default: "DM Sans")
+#' @param base_family Base font family (default: "Metropolis")
 #' @param base_size Base font size (default: 10.5)
 #' @param with.panel.grid Include panel grid (default: FALSE)
 #' @param with.axis.line Include axis line (default: TRUE)
@@ -27,7 +27,7 @@
 #' @export
 
 theme_emw <- function(
-    base_family = "Metropolis",
+    base_family = "Oswald",
     base_size = 10.5,
     with.panel.grid = FALSE,
     with.axis.line = TRUE,
@@ -48,8 +48,6 @@ theme_emw <- function(
     plot_margin = ggplot2::margin(20,20,20,20),
     base_theme = ggplot2::theme_minimal()
 ) {
-
-  if (!is.null(base_family)) check_font(base_family)
 
   base_theme +
     ggplot2::theme(

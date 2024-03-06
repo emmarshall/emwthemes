@@ -26,5 +26,5 @@ Plotting with personal palettes for color ggplot2 - inspired by emwCols()
 library(ggplot2)
 ggplot(data=mtcars, aes(x=mpg, y=disp, color=wt)) +
   geom_point() +
-  scale_color_emw_c("Reds")
+  scale_color_emw_c("Corals")
 }

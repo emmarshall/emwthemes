@@ -47,8 +47,6 @@ theme_emw_dark <- function(
     base_theme = ggplot2::theme_minimal()
 ) {
 
-  if (!is.null(base_family)) check_font(base_family)
-
   base_theme +
     ggplot2::theme(
       text = ggplot2::element_text(

@@ -2,7 +2,7 @@
 % Please edit documentation in R/scale_fill_emw.R
 \name{scale_fill_emw_div}
 \alias{scale_fill_emw_div}
-\title{Plotting with emwCols palettes for fill colour ggplot2}
+\title{Plotting with emwCols palettes for fill color ggplot2}
 \usage{
 scale_fill_emw_div(name, direction = 1, legend_title = NULL, ...)
 }
@@ -15,17 +15,17 @@ palette color order is reversed}
 
 \item{legend_title}{Character string specifying legend title. Default \code{NULL}.}
 
-\item{...}{Other arguments passed on to \code{\link[ggplot2]{scale_colour_gradient2}}}
+\item{...}{Other arguments passed on to \code{\link[ggplot2]{scale_color_gradient2}}}
 }
 \value{
-A ggproto object defining a continuous colour scale for use with ggplot2.
+A ggproto object defining a continuous color scale for use with ggplot2.
 }
 \description{
-Plotting with emwCols palettes for fill colour ggplot2
+Plotting with emwCols palettes for fill color ggplot2
 }
 \examples{
 library(ggplot2)
 ggplot(data=mtcars, aes(x=mpg, y=disp, fill=wt)) +
   geom_point(pch = 21) +
-  scale_fill_emw_div("PurpleYellows", midpoint = mean(mtcars$wt))
+  scale_fill_emw_div("Coral2Blues", midpoint = mean(mtcars$wt))
 }

@@ -5,7 +5,7 @@
 \title{Custom ggplot2 theme for Personal use}
 \usage{
 theme_emw(
-  base_family = "Metropolis",
+  base_family = "Oswald",
   base_size = 10.5,
   with.panel.grid = FALSE,
   with.axis.line = TRUE,
@@ -28,7 +28,7 @@ theme_emw(
 )
 }
 \arguments{
-\item{base_family}{Base font family (default: "DM Sans")}
+\item{base_family}{Base font family (default: "Metropolis")}
 
 \item{base_size}{Base font size (default: 10.5)}
 

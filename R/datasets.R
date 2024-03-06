@@ -1,5 +1,5 @@
-#' @title DATASET_TITLE
-#' @description DATASET_DESCRIPTION
+#' @title Hindsight
+#' @description A simulated data set replicating the structure of my master's thesis work. Available to use for plotting and playing with various functions.
 #' @format A data frame with 360 rows and 45 variables:
 #' \describe{
 #'   \item{\code{ID}}{character COLUMN_DESCRIPTION}
@@ -50,6 +50,5 @@
 #'}
 #'
 #'#' @import tidyr
-#'
 #' @source \url{Simulated data from MERP}
 "hindsight"

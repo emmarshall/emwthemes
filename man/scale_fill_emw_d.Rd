@@ -2,7 +2,7 @@
 % Please edit documentation in R/scale_fill_emw.R
 \name{scale_fill_emw_d}
 \alias{scale_fill_emw_d}
-\title{Plotting with emwCols palettes for colour ggplot2}
+\title{Plotting with emwCols palettes for color ggplot2}
 \usage{
 scale_fill_emw_d(name, direction = 1, legend_title = NULL, ...)
 }
@@ -20,7 +20,7 @@ palette color order is reversed}
 A ggproto object defining a discrete fill scale for use with ggplot2.
 }
 \description{
-Plotting with emwCols palettes for colour ggplot2
+Plotting with emwCols palettes for color ggplot2
 }
 \examples{
 library(ggplot2)

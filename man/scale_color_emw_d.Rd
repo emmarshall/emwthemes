@@ -14,17 +14,17 @@ palette color order is reversed}
 
 \item{legend_title}{Character string specifying legend title. Default \code{NULL}.}
 
-\item{...}{Other arguments passed on to \code{\link[ggplot2]{scale_color_gradientn}}}
+\item{...}{Other arguments passed on to \code{\link[ggplot2]{discrete_scale}}}
 }
 \value{
-A ggplot object defining a continuous color scale for use with ggplot2.
+A ggproto object defining a discrete color scale for use with ggplot2.
 }
 \description{
 Plotting with personal palettes for color ggplot2 - inspired by emwCols()
 }
 \examples{
 library(ggplot2)
-ggplot(data=mtcars, aes(x=mpg, y=disp, color=wt)) +
+ggplot(data=mtcars, aes(x=mpg, y=disp, color=factor(cyl))) +
   geom_point() +
-  scale_color_emw_c("Reds")
+  scale_color_emw_d("Bright")
 }

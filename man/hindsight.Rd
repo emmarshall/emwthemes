@@ -3,7 +3,7 @@
 \docType{data}
 \name{hindsight}
 \alias{hindsight}
-\title{DATASET_TITLE}
+\title{Hindsight}
 \format{
 A data frame with 360 rows and 45 variables:
 \describe{
@@ -63,6 +63,6 @@ A data frame with 360 rows and 45 variables:
 hindsight
 }
 \description{
-DATASET_DESCRIPTION
+A simulated data set replicating the structure of my master's thesis work. Available to use for plotting and playing with various functions.
 }
 \keyword{datasets}

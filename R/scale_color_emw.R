@@ -9,7 +9,7 @@
 #' library(ggplot2)
 #' ggplot(data=mtcars, aes(x=mpg, y=disp, color=wt)) +
 #'   geom_point() +
-#'   scale_color_emw_c("Reds")
+#'   scale_color_emw_c("Corals")
 #' @export
 
 scale_color_emw_c <- function(name,
@@ -42,13 +42,13 @@ scale_color_emw_c <- function(name,
 #' @param direction Sets order of colors. Default palette is 1. If direction is -1,
 #' palette color order is reversed
 #' @param legend_title Character string specifying legend title. Default `NULL`.
-#' @param ... Other arguments passed on to \code{\link[ggplot2]{scale_color_gradientn}}
-#' @return A ggplot object defining a continuous color scale for use with ggplot2.
+#' @param ... Other arguments passed on to \code{\link[ggplot2]{discrete_scale}}
+#' @return A ggproto object defining a discrete color scale for use with ggplot2.
 #' @examples
 #' library(ggplot2)
-#' ggplot(data=mtcars, aes(x=mpg, y=disp, color=wt)) +
+#' ggplot(data=mtcars, aes(x=mpg, y=disp, color=factor(cyl))) +
 #'   geom_point() +
-#'   scale_color_emw_c("Reds")
+#'   scale_color_emw_d("Bright")
 #' @export
 
 scale_color_emw_d <- function(name,
@@ -95,13 +95,13 @@ scale_color_emw_d <- function(name,
 #' @param direction Sets order of colors. Default palette is 1. If direction is -1,
 #' palette color order is reversed
 #' @param legend_title Character string specifying legend title. Default `NULL`.
-#' @param ... Other arguments passed on to \code{\link[ggplot2]{scale_colour_gradient2}}
-#' @return A ggproto object defining a continuous colour scale for use with ggplot2.
+#' @param ... Other arguments passed on to \code{\link[ggplot2]{scale_color_gradient2}}
+#' @return A ggproto object defining a continuous diverging color scale for use with ggplot2.
 #' @examples
 #' library(ggplot2)
-#' ggplot(data=mtcars, aes(x=mpg, y=disp, colour=wt)) +
+#' ggplot(data=mtcars, aes(x=mpg, y=disp, color=wt)) +
 #'   geom_point() +
-#'   scale_color_emw_div("PinkGreens", midpoint = mean(mtcars$wt))
+#'   scale_color_emw_div("Coral2Blues", midpoint = mean(mtcars$wt))
 #' @export
 
 scale_color_emw_div <- function(name,
