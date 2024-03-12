@@ -16,8 +16,8 @@
 #' @param md indicate whether to use markdown elements for text
 #' @export
 
-theme_em <- function(title_family = "Oswald",
-                     text_family = "Oswald",
+theme_em <- function(title_family = "Permanent Marker",
+                     text_family = "Permanent Marker",
                      base_size = 11, text_color = "#2F2D2E",
                      bg_color = "#fefefe", line_color = "gray50",
                      plot_margin = ggplot2::margin(0.5, 1, 0.5, 1, unit = "cm"),

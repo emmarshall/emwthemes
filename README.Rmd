@@ -51,9 +51,9 @@ See [vignette]().
 Themes use two different color palette:
 
 ```{r colors, eval=FALSE}
-scales::show_col(emwthemes:::emw_pal)
-scales::show_col(emwthemes:::dark_pal)
-scaled::show_col(emwthemes:::unl_pal)
+scales::show_col(emwthemes:::emw_pal(5))
+scales::show_col(emwthemes:::dark_pal(5))
+scales::show_col(emwthemes:::unl_pal(5))
 ```
 
 ### Personal Color Palette (default for `theme_emw()`)

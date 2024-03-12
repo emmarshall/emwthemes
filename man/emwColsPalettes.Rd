@@ -5,7 +5,7 @@
 \alias{emwColsPalettes}
 \title{Complete list of available palettes.}
 \format{
-An object of class \code{list} of length 37.
+An object of class \code{list} of length 39.
 }
 \usage{
 emwColsPalettes

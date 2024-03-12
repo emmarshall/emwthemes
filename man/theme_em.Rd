@@ -5,8 +5,8 @@
 \title{A \link{ggplot2} theme for personal use}
 \usage{
 theme_em(
-  title_family = "Oswald",
-  text_family = "Oswald",
+  title_family = "Permanent Marker",
+  text_family = "Permanent Marker",
   base_size = 11,
   text_color = "#2F2D2E",
   bg_color = "#fefefe",

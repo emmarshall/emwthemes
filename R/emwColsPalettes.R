@@ -109,6 +109,37 @@ emwColsPalettes <- list(
     TRUE
   ),
 
+  FireStorm = list(
+    c( '#ffffff',
+       '#ffe0df',
+       '#ffc1c0',
+       '#ffa1a0',
+       '#ff8281',
+       '#ff6361',
+       '#eb4b49',
+       '#d63331',
+       '#c21a18',
+       '#ad0200'),
+    c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+    "seq",
+    TRUE
+  ),
+  IcePack = list(
+    c('#40bce9',
+      '#35a0c6',
+      '#2983a4',
+      '#1e6781',
+      '#124a5f',
+      '#072e3c',
+      '#05232d',
+      '#04171e',
+      '#020c0f',
+      '#000000'),
+    c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+    "seq",
+    TRUE
+  ),
+
   Gilmore_S1 = list(
     c("#DF6D3B", "#F3A749", "#F5C371", "#F5D9AC", "#EDE9D0"),
     c(1, 2, 3, 4, 5),

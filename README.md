@@ -41,9 +41,9 @@ See [vignette]().
 Themes use two different color palette:
 
 ``` r
-scales::show_col(emwthemes:::emw_pal)
-scales::show_col(emwthemes:::dark_pal)
-scaled::show_col(emwthemes:::unl_pal)
+scales::show_col(emwthemes:::emw_pal(5))
+scales::show_col(emwthemes:::dark_pal(5))
+scales::show_col(emwthemes:::unl_pal(5))
 ```
 
 ### Personal Color Palette (default for `theme_emw()`)
@@ -81,6 +81,7 @@ Vignette]() on the [Package Website]().
 ``` r
 
 library(emwthemes)
+#> Package fonts loaded. See `?load_pkg_fonts` for details.
 library(ggplot2)
 library(extrafont)
 #> Registering fonts with R

@@ -33,13 +33,15 @@ library(ggtext)
 library(systemfonts)
 library(showtext)
 
-showtext::showtext_auto()
+cash <- "#xf651"
 
+showtext::showtext_auto()
 tib <- tibble(
   family = c('Monolisaemw', 'Metropolis', 'Oswald'),
   x = 0,
   y = seq(0.0, 1, length.out = 3),
-  label = "Let's talk cash <span style='font-family:fa-solid'>&#xf651;</span>"
+    label = "Let's talk cash <span style='font-family:Font Awesome 6 Free'>&#xf651;</span>"
+
 )
 
 
